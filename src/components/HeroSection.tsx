@@ -4,7 +4,7 @@ import heroStudents from "@/assets/hero-students.jpg";
 
 const HeroSection = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24">{/* 96px top padding to account for 80px header + spacing */}
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
