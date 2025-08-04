@@ -20,9 +20,9 @@ const HeroSection = () => {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              Find Your Perfect 
+              Your Bridge from
               <span className="block bg-gradient-to-r from-white to-accent bg-clip-text text-transparent">
-                Private B.Tech College
+               Campus Life to Corporate Life
               </span>
             </h1>
             
