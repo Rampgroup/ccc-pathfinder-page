@@ -83,6 +83,8 @@ export default {
 				'soft': 'var(--shadow-soft)',
 				'medium': 'var(--shadow-medium)',
 				'large': 'var(--shadow-large)',
+				'card': 'var(--shadow-card)',
+				'elegant': 'var(--shadow-elegant)',
 				'glow': 'var(--shadow-glow)',
 			},
 			backgroundImage: {
