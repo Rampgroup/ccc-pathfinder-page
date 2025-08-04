@@ -1,90 +1,124 @@
+import { ArrowRight, Play, Star, Users, Award, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, BookOpen, Users, Trophy } from "lucide-react";
-import heroImage from "@/assets/hero-image.jpg";
+import heroStudents from "@/assets/hero-students.jpg";
 
 const HeroSection = () => {
   return (
-    <section id="home" className="min-h-screen bg-gradient-hero relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]" />
-      <div className="absolute top-1/4 right-10 w-72 h-72 bg-primary-glow/20 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/4 left-10 w-96 h-96 bg-accent/20 rounded-full blur-3xl" />
-      
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-12">
-        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[calc(100vh-96px)]">
-          {/* Left Column - Text Content */}
-          <div className="text-center lg:text-left">
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white mb-6">
-              <Trophy className="w-4 h-4 mr-2" />
-              <span className="text-sm font-medium">#1 Career Platform for Students</span>
-            </div>
-            
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              Your Bridge from
-              <span className="block bg-gradient-to-r from-white to-accent bg-clip-text text-transparent">
-               Campus Life to Corporate Life
-              </span>
-            </h1>
-            
-            <p className="text-xl text-white/90 mb-8 max-w-2xl">
-              CCC connects 12th-passed students with top private B.Tech colleges and provides ongoing 
-              skill training through Trainlance to ensure career success from day one.
-            </p>
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src={heroStudents} 
+          alt="Students achieving success"
+          className="w-full h-full object-cover opacity-20"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary/70 to-secondary/80"></div>
+      </div>
 
-            {/* Stats */}
-            <div className="flex flex-wrap gap-6 mb-8 justify-center lg:justify-start">
-              <div className="text-center">
-                <div className="text-2xl font-bold text-white">10K+</div>
-                <div className="text-white/80 text-sm">Students Placed</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-white">500+</div>
-                <div className="text-white/80 text-sm">College Partners</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-white">95%</div>
-                <div className="text-white/80 text-sm">Success Rate</div>
-              </div>
-            </div>
+      {/* Floating Elements */}
+      <div className="absolute top-20 left-10 animate-float">
+        <div className="glass p-4 rounded-2xl">
+          <Star className="w-8 h-8 text-accent" />
+        </div>
+      </div>
+      <div className="absolute top-40 right-20 animate-float" style={{ animationDelay: '2s' }}>
+        <div className="glass p-4 rounded-2xl">
+          <Award className="w-8 h-8 text-secondary" />
+        </div>
+      </div>
+      <div className="absolute bottom-40 left-20 animate-float" style={{ animationDelay: '4s' }}>
+        <div className="glass p-4 rounded-2xl">
+          <TrendingUp className="w-8 h-8 text-accent" />
+        </div>
+      </div>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button variant="hero" size="lg" className="group">
-                Explore Colleges
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button variant="outline" size="lg" className="bg-white/10 border-white/30 text-white hover:bg-white/20">
-                <BookOpen className="w-5 h-5 mr-2" />
-                Trainlance Programs
-              </Button>
+      {/* Main Content */}
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center max-w-5xl mx-auto">
+          {/* Badge */}
+          <div className="inline-flex items-center px-6 py-3 mb-8 bg-white/20 backdrop-blur-sm rounded-full border border-white/30 animate-bounce-in">
+            <Users className="w-5 h-5 text-white mr-2" />
+            <span className="text-white font-semibold">10,000+ Students Placed Successfully</span>
+          </div>
+
+          {/* Main Headline */}
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold font-poppins text-white mb-6 animate-fade-in-up leading-tight">
+            From Dream College
+            <br />
+            <span className="bg-gradient-to-r from-accent to-accent-light bg-clip-text text-transparent">
+              to Dream Job
+            </span>
+          </h1>
+
+          {/* Subheadline */}
+          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto font-medium leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+            Your complete journey partner for private B.Tech college admissions with 
+            <span className="text-accent font-semibold"> 4-year Trainlance skill training</span> program. 
+            Turn your engineering dreams into reality!
+          </p>
+
+          {/* Stats Row */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mb-12 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+            <div className="flex items-center space-x-2 text-white">
+              <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
+                <span className="font-bold text-white">500+</span>
+              </div>
+              <span className="font-semibold">Partner Colleges</span>
+            </div>
+            <div className="flex items-center space-x-2 text-white">
+              <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center">
+                <span className="font-bold text-white">98%</span>
+              </div>
+              <span className="font-semibold">Success Rate</span>
+            </div>
+            <div className="flex items-center space-x-2 text-white">
+              <div className="w-12 h-12 bg-accent-light rounded-full flex items-center justify-center">
+                <span className="font-bold text-white">24/7</span>
+              </div>
+              <span className="font-semibold">Support</span>
             </div>
           </div>
 
-          {/* Right Column - Hero Image */}
-          <div className="relative lg:order-last">
-            <div className="relative">
-              <img
-                src={heroImage}
-                alt="Successful students at Campus Career Club"
-                className="w-full h-auto rounded-2xl shadow-2xl"
-              />
-              <div className="absolute -bottom-6 -right-6 bg-white rounded-xl p-4 shadow-elegant max-w-xs">
-                <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center">
-                    <Users className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <div className="font-semibold text-primary">Join 10K+ Students</div>
-                    <div className="text-sm text-muted-foreground">Building their future</div>
-                  </div>
-                </div>
-              </div>
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
+            <Button variant="cta" size="xl" className="text-xl font-bold hover:scale-110 transition-all duration-300 shadow-2xl">
+              Explore Top Colleges
+              <ArrowRight className="w-6 h-6 ml-2" />
+            </Button>
+            <Button 
+              variant="outline" 
+              size="xl" 
+              className="text-xl font-bold border-2 border-white text-white hover:bg-white hover:text-primary backdrop-blur-sm bg-white/10"
+            >
+              <Play className="w-6 h-6 mr-2" />
+              Watch Success Stories
+            </Button>
+          </div>
+
+          {/* Trust Indicators */}
+          <div className="mt-16 flex flex-wrap items-center justify-center gap-8 text-white/80 animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
+            <div className="flex items-center space-x-2">
+              <div className="w-2 h-2 bg-accent rounded-full"></div>
+              <span className="text-sm font-medium">Trusted by Top Colleges</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <div className="w-2 h-2 bg-secondary rounded-full"></div>
+              <span className="text-sm font-medium">4-Year Training Guarantee</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <div className="w-2 h-2 bg-accent-light rounded-full"></div>
+              <span className="text-sm font-medium">100% Admission Support</span>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
+          <div className="w-1 h-3 bg-white/70 rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
     </section>
   );
 };
-
-export default HeroSection;
