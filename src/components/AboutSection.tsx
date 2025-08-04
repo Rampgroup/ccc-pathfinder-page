@@ -26,7 +26,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="about" className="content-section bg-gradient-subtle">
+    <section id="about" className="content-section">
       <div className="container mx-auto">
         <div className="text-center mb-20">
           <h2 className="font-black text-primary mb-6 text-balance">
@@ -50,24 +50,24 @@ const AboutSection = () => {
             </div>
             
             <div className="space-y-6">
-              <div className="flex items-start space-x-4 p-4 rounded-2xl bg-card border border-border/30">
-                <div className="flex-shrink-0 w-8 h-8 bg-gradient-primary rounded-full flex items-center justify-center text-white font-bold">1</div>
+              <div className="flex items-start space-x-4 p-4 rounded-2xl border border-border/30">
+                <div className="flex-shrink-0 w-8 h-8 border-2 border-primary rounded-full flex items-center justify-center text-primary font-bold">1</div>
                 <div>
                   <h4 className="font-bold text-primary mb-2">Find Your Perfect College</h4>
                   <p className="text-muted-foreground">Choose from 500+ top B.Tech institutions across India with expert guidance.</p>
                 </div>
               </div>
               
-              <div className="flex items-start space-x-4 p-4 rounded-2xl bg-card border border-border/30">
-                <div className="flex-shrink-0 w-8 h-8 bg-gradient-secondary rounded-full flex items-center justify-center text-white font-bold">2</div>
+              <div className="flex items-start space-x-4 p-4 rounded-2xl border border-border/30">
+                <div className="flex-shrink-0 w-8 h-8 border-2 border-secondary rounded-full flex items-center justify-center text-secondary font-bold">2</div>
                 <div>
                   <h4 className="font-bold text-primary mb-2">Master Industry Skills</h4>
                   <p className="text-muted-foreground">Start skill training from Day 1 with our exclusive Trainlance program.</p>
                 </div>
               </div>
               
-              <div className="flex items-start space-x-4 p-4 rounded-2xl bg-card border border-border/30">
-                <div className="flex-shrink-0 w-8 h-8 bg-gradient-accent rounded-full flex items-center justify-center text-white font-bold">3</div>
+              <div className="flex items-start space-x-4 p-4 rounded-2xl border border-border/30">
+                <div className="flex-shrink-0 w-8 h-8 border-2 border-accent rounded-full flex items-center justify-center text-accent font-bold">3</div>
                 <div>
                   <h4 className="font-bold text-primary mb-2">Secure Job Offers</h4>
                   <p className="text-muted-foreground">Graduate with job offers, not just a degree. 98% placement success rate.</p>
@@ -75,7 +75,7 @@ const AboutSection = () => {
               </div>
             </div>
             
-            <div className="p-6 bg-gradient-primary/5 rounded-2xl border border-primary/20">
+            <div className="p-6 border-2 border-primary/20 rounded-2xl">
               <p className="text-lg font-semibold text-primary text-center">
                 Join 10,000+ students who trusted CCC and are now working in top companies. 
                 Your success story starts here.
@@ -87,10 +87,10 @@ const AboutSection = () => {
             {values.map((value, index) => {
               const IconComponent = value.icon;
               return (
-                <Card key={index} className="feature-card border-0 shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 group">
+                <Card key={index} className="border border-border/30 shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 group">
                   <CardContent className="p-8 text-center">
-                    <div className="w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-card">
-                      <IconComponent className="w-8 h-8 text-white" />
+                    <div className="w-16 h-16 border-2 border-primary rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-card">
+                      <IconComponent className="w-8 h-8 text-primary" />
                     </div>
                     <h4 className="font-bold text-primary mb-3 text-lg">{value.title}</h4>
                     <p className="text-muted-foreground leading-relaxed">{value.description}</p>
@@ -104,7 +104,7 @@ const AboutSection = () => {
         <div className="section-divider"></div>
         
         {/* Enhanced Statistics */}
-        <div className="bg-gradient-card rounded-3xl p-10 shadow-elegant border border-border/20">
+        <div className="border-2 border-border/20 rounded-3xl p-10 shadow-elegant">
           <h3 className="text-2xl font-black text-primary text-center mb-8">Our Track Record Speaks</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center group">

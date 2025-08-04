@@ -9,24 +9,24 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-gradient-primary text-white hover:shadow-elegant hover:scale-[1.02] rounded-2xl shadow-card",
+        default: "text-primary border-2 border-primary hover:text-primary-dark rounded-2xl shadow-card",
         destructive:
-          "bg-destructive text-destructive-foreground hover:bg-destructive/90 rounded-2xl shadow-card",
+          "text-destructive border-2 border-destructive hover:text-destructive/90 rounded-2xl shadow-card",
         outline:
-          "border-2 border-primary text-primary bg-background hover:bg-primary hover:text-white rounded-2xl hover:scale-[1.02] shadow-card hover:shadow-elegant",
+          "border-2 border-primary text-primary hover:text-primary-dark rounded-2xl hover:scale-[1.02] shadow-card hover:shadow-elegant",
         secondary:
-          "bg-gradient-secondary text-white hover:shadow-elegant hover:scale-[1.02] rounded-2xl shadow-card",
+          "text-secondary border-2 border-secondary hover:text-secondary-dark hover:scale-[1.02] rounded-2xl shadow-card",
         accent:
-          "bg-gradient-accent text-white hover:shadow-elegant hover:scale-[1.02] rounded-2xl shadow-card",
-        ghost: "hover:bg-muted/80 hover:text-foreground rounded-2xl",
+          "text-accent border-2 border-accent hover:text-accent-dark hover:scale-[1.02] rounded-2xl shadow-card",
+        ghost: "text-foreground hover:text-primary rounded-2xl",
         link: "text-primary underline-offset-4 hover:underline",
-        cta: "bg-gradient-primary text-white font-black shadow-card hover:shadow-elegant hover:scale-[1.02] hover:shadow-glow rounded-2xl",
-        "cta-outline": "border-2 border-primary text-primary bg-background hover:bg-primary hover:text-white hover:scale-[1.02] rounded-2xl shadow-card",
-        "cta-secondary": "bg-gradient-secondary text-white font-black shadow-card hover:shadow-elegant hover:scale-[1.02] rounded-2xl",
-        "cta-accent": "bg-gradient-accent text-white font-black shadow-card hover:shadow-elegant hover:scale-[1.02] rounded-2xl",
-        modern: "bg-white text-primary border border-border hover:bg-primary hover:text-white shadow-card hover:shadow-elegant rounded-2xl hover:scale-[1.02]",
-        hero: "bg-gradient-accent text-white shadow-elegant hover:shadow-glow hover:scale-[1.02] transition-all duration-300 font-black rounded-2xl",
-        gradient: "bg-gradient-primary text-white hover:shadow-glow transition-all duration-300 rounded-2xl shadow-card",
+        cta: "text-primary border-2 border-primary font-black shadow-card hover:shadow-elegant hover:scale-[1.02] rounded-2xl",
+        "cta-outline": "border-2 border-primary text-primary hover:text-primary-dark hover:scale-[1.02] rounded-2xl shadow-card",
+        "cta-secondary": "text-secondary border-2 border-secondary font-black shadow-card hover:shadow-elegant hover:scale-[1.02] rounded-2xl",
+        "cta-accent": "text-accent border-2 border-accent font-black shadow-card hover:shadow-elegant hover:scale-[1.02] rounded-2xl",
+        modern: "text-primary border border-border hover:text-primary-dark shadow-card hover:shadow-elegant rounded-2xl hover:scale-[1.02]",
+        hero: "text-accent border-2 border-accent shadow-elegant hover:shadow-glow hover:scale-[1.02] transition-all duration-300 font-black rounded-2xl",
+        gradient: "text-primary border-2 border-primary hover:shadow-glow transition-all duration-300 rounded-2xl shadow-card",
       },
       size: {
         default: "h-12 px-6 py-3 text-base",
