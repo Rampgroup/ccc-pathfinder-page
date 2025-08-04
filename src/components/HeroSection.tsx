@@ -34,12 +34,6 @@ const HeroSection = () => {
       {/* Main Content */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-5xl mx-auto">
-          {/* Badge */}
-          <div className="inline-flex items-center justify-center px-6 py-3 mb-8 border-2 border-primary backdrop-blur-md rounded-2xl animate-bounce-in shadow-elegant">
-            <Users className="w-5 h-5 text-primary mr-2 flex-shrink-0" />
-            <span className="text-primary font-bold text-sm md:text-base whitespace-nowrap">10,000+ Students Already Placed in Top Colleges!</span>
-          </div>
-
           {/* Main Headline */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-black font-poppins text-foreground mb-6 animate-fade-in-up leading-tight text-balance">
             From Dream College
