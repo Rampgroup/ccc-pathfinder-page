@@ -94,8 +94,8 @@ const Footer = () => {
               © 2024 Campus Career Club. All rights reserved.
             </div>
             <div className="flex space-x-6 text-sm">
-              <a href="#" className="text-primary-foreground/80 hover:text-accent transition-colors">Privacy Policy</a>
-              <a href="#" className="text-primary-foreground/80 hover:text-accent transition-colors">Terms of Service</a>
+              <a href="/privacy" className="text-primary-foreground/80 hover:text-accent transition-colors">Privacy Policy</a>
+              <a href="/terms" className="text-primary-foreground/80 hover:text-accent transition-colors">Terms of Service</a>
               <a href="#" className="text-primary-foreground/80 hover:text-accent transition-colors">Cookie Policy</a>
             </div>
           </div>
