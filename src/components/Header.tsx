@@ -16,11 +16,11 @@ const Header = () => {
 
   const navLinks = [
     { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Services", href: "#services" },
-    { name: "Partner Colleges", href: "#partners" },
-    { name: "Training (Trainlance)", href: "#trainlance" },
-    { name: "Contact Us", href: "#contact" },
+    { name: "About Us", href: "#about" },
+    { name: "Our Services", href: "#services" },
+    { name: "Top Colleges", href: "#partners" },
+    { name: "Skill Training", href: "#trainlance" },
+    { name: "Get Support", href: "#contact" },
   ];
 
   return (
@@ -38,7 +38,7 @@ const Header = () => {
             </div>
             <div>
               <h1 className="text-2xl font-bold font-poppins gradient-text">Campus Career Club</h1>
-              <p className="text-sm text-muted-foreground font-medium">From Dream College to Dream Job</p>
+              <p className="text-sm text-muted-foreground font-medium">Your Success Partner from Inter to Career</p>
             </div>
           </div>
 
@@ -60,10 +60,10 @@ const Header = () => {
           <div className="hidden lg:flex items-center space-x-4">
             <Button variant="cta-outline" size="sm" className="font-semibold">
               <Phone className="w-4 h-4 mr-2" />
-              Free Consultation
+              Book Free Call
             </Button>
             <Button variant="cta" size="sm" className="font-semibold">
-              Get College List
+              Find Your College
             </Button>
           </div>
 
@@ -101,10 +101,10 @@ const Header = () => {
             <div className="flex flex-col space-y-3 pt-4 px-4">
               <Button variant="cta-outline" size="sm" className="w-full font-semibold">
                 <Phone className="w-4 h-4 mr-2" />
-                Free Consultation
+                Book Free Call
               </Button>
               <Button variant="cta" size="sm" className="w-full font-semibold">
-                Get College List
+                Find Your College
               </Button>
             </div>
           </nav>

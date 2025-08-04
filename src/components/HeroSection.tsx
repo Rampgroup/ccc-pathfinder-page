@@ -38,51 +38,51 @@ const HeroSection = () => {
           {/* Badge */}
           <div className="inline-flex items-center px-6 py-3 mb-8 bg-white/20 backdrop-blur-sm rounded-full border border-white/30 animate-bounce-in">
             <Users className="w-5 h-5 text-white mr-2" />
-            <span className="text-white font-semibold">10,000+ Students Placed Successfully</span>
+            <span className="text-white font-semibold">10,000+ Students Already Placed in Top Colleges!</span>
           </div>
 
           {/* Main Headline */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold font-poppins text-white mb-6 animate-fade-in-up leading-tight">
-            From Dream College
+            Turn Your Engineering
             <br />
             <span className="bg-gradient-to-r from-accent to-accent-light bg-clip-text text-transparent">
-              to Dream Job
+              Dreams into Reality
             </span>
           </h1>
 
           {/* Subheadline */}
-          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto font-medium leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            Your complete journey partner for private B.Tech college admissions with 
-            <span className="text-accent font-semibold"> 4-year Trainlance skill training</span> program. 
-            Turn your engineering dreams into reality!
+          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto font-medium leading-relaxed animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+            Get into your dream B.Tech college with expert guidance. Then master 
+            <span className="text-accent font-semibold"> in-demand skills</span> with our 4-year training program. 
+            We are with you from Inter results to your first job offer!
           </p>
 
           {/* Stats Row */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mb-12 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mb-12 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
             <div className="flex items-center space-x-2 text-white">
               <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
                 <span className="font-bold text-white">500+</span>
               </div>
-              <span className="font-semibold">Partner Colleges</span>
+              <span className="font-semibold">Top Colleges</span>
             </div>
             <div className="flex items-center space-x-2 text-white">
               <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center">
                 <span className="font-bold text-white">98%</span>
               </div>
-              <span className="font-semibold">Success Rate</span>
+              <span className="font-semibold">Placement Rate</span>
             </div>
             <div className="flex items-center space-x-2 text-white">
               <div className="w-12 h-12 bg-accent-light rounded-full flex items-center justify-center">
                 <span className="font-bold text-white">24/7</span>
               </div>
-              <span className="font-semibold">Support</span>
+              <span className="font-semibold">Expert Support</span>
             </div>
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 animate-fade-in-up" style={{ animationDelay: "0.6s" }}>
             <Button variant="cta" size="xl" className="text-xl font-bold hover:scale-110 transition-all duration-300 shadow-2xl">
-              Explore Top Colleges
+              Start Your Journey
               <ArrowRight className="w-6 h-6 ml-2" />
             </Button>
             <Button 
@@ -91,23 +91,23 @@ const HeroSection = () => {
               className="text-xl font-bold border-2 border-white text-white hover:bg-white hover:text-primary backdrop-blur-sm bg-white/10"
             >
               <Play className="w-6 h-6 mr-2" />
-              Watch Success Stories
+              See Success Stories
             </Button>
           </div>
 
           {/* Trust Indicators */}
-          <div className="mt-16 flex flex-wrap items-center justify-center gap-8 text-white/80 animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
+          <div className="mt-16 flex flex-wrap items-center justify-center gap-8 text-white/80 animate-fade-in-up" style={{ animationDelay: "0.8s" }}>
             <div className="flex items-center space-x-2">
               <div className="w-2 h-2 bg-accent rounded-full"></div>
-              <span className="text-sm font-medium">Trusted by Top Colleges</span>
+              <span className="text-sm font-medium">Trusted by India's Top Colleges</span>
             </div>
             <div className="flex items-center space-x-2">
               <div className="w-2 h-2 bg-secondary rounded-full"></div>
-              <span className="text-sm font-medium">4-Year Training Guarantee</span>
+              <span className="text-sm font-medium">Complete Skill Training Included</span>
             </div>
             <div className="flex items-center space-x-2">
               <div className="w-2 h-2 bg-accent-light rounded-full"></div>
-              <span className="text-sm font-medium">100% Admission Support</span>
+              <span className="text-sm font-medium">End-to-End Admission Support</span>
             </div>
           </div>
         </div>
