@@ -5,27 +5,27 @@ import { CheckCircle, UserPlus, Search, MessageCircle, GraduationCap } from "luc
 const HowItWorksSection = () => {
   const steps = [
     {
-      icon: UserPlus,
-      title: "Sign Up & Profile Creation",
-      description: "Create your personalized profile with academic background, interests, and career goals.",
+      icon: MessageCircle,
+      title: "Connect with Us",
+      description: "Reach out to our expert counselors who understand your academic goals and career aspirations.",
       color: "from-blue-500 to-blue-600"
     },
     {
       icon: Search,
-      title: "AI-Powered Matching",
-      description: "Our advanced algorithm matches you with the most suitable colleges and career paths.",
+      title: "Choose Your College",
+      description: "Browse our curated list of premium private B.Tech colleges and find the perfect match for your profile.",
       color: "from-purple-500 to-purple-600"
     },
     {
-      icon: MessageCircle,
-      title: "Expert Counseling",
-      description: "Get one-on-one guidance from our experienced career counselors and industry experts.",
+      icon: UserPlus,
+      title: "Get Admission Support",
+      description: "Receive end-to-end admission assistance, from application to enrollment, ensuring a smooth process.",
       color: "from-green-500 to-green-600"
     },
     {
       icon: GraduationCap,
-      title: "College Application",
-      description: "Apply to your dream colleges with our streamlined application process and support.",
+      title: "Start Career Training with Trainlance",
+      description: "Begin your skill development journey from first year with programming, soft skills, and aptitude training.",
       color: "from-orange-500 to-orange-600"
     }
   ];

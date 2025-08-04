@@ -20,15 +20,15 @@ const HeroSection = () => {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              Your Bridge to 
+              Find Your Perfect 
               <span className="block bg-gradient-to-r from-white to-accent bg-clip-text text-transparent">
-                Dream Colleges
+                Private B.Tech College
               </span>
             </h1>
             
             <p className="text-xl text-white/90 mb-8 max-w-2xl">
-              Campus Career Club empowers 12th-passed students with personalized guidance, 
-              college connections, and career roadmaps to unlock their full potential.
+              CCC connects 12th-passed students with top private B.Tech colleges and provides ongoing 
+              skill training through Trainlance to ensure career success from day one.
             </p>
 
             {/* Stats */}
@@ -50,12 +50,12 @@ const HeroSection = () => {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button variant="hero" size="lg" className="group">
-                Start Your Journey
+                Explore Colleges
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button variant="outline" size="lg" className="bg-white/10 border-white/30 text-white hover:bg-white/20">
                 <BookOpen className="w-5 h-5 mr-2" />
-                Explore Programs
+                Trainlance Programs
               </Button>
             </div>
           </div>

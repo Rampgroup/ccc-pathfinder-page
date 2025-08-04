@@ -33,8 +33,8 @@ const AboutSection = () => {
             About Campus Career Club
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            We're more than just a career guidance platform. We're your partners in building 
-            a successful academic and professional future.
+            We specialize in connecting 12th-passed students with premium private B.Tech colleges 
+            and provide comprehensive skill training through our Trainlance partnership.
           </p>
         </div>
 
@@ -42,17 +42,18 @@ const AboutSection = () => {
           <div>
             <h3 className="text-2xl font-bold text-primary mb-6">Our Mission</h3>
             <p className="text-lg text-muted-foreground mb-6">
-              Campus Career Club was founded with a simple yet powerful mission: to bridge the gap 
-              between academic achievement and career success for 12th-passed students across India.
+              Campus Career Club bridges the gap between academic aspirations and career success 
+              for 12th-passed students seeking admission to top private B.Tech colleges across India.
             </p>
             <p className="text-lg text-muted-foreground mb-6">
-              We understand that transitioning from school to college can be overwhelming. That's why 
-              we've created a comprehensive ecosystem that provides personalized guidance, direct 
-              college connections, and continuous support throughout your educational journey.
+              We understand that getting into the right college is just the beginning. That's why 
+              we've partnered with Trainlance to provide continuous skill development from your 
+              first year onwards, ensuring you graduate job-ready with in-demand skills.
             </p>
             <p className="text-lg text-muted-foreground">
-              Our team of experienced counselors, industry professionals, and educational experts 
-              work tirelessly to ensure every student finds their perfect academic and career path.
+              Our comprehensive approach combines college placement expertise with cutting-edge 
+              training in programming, soft skills, and aptitude development through Trainlance's 
+              proven curriculum.
             </p>
           </div>
 

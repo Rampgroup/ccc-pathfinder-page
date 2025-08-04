@@ -7,28 +7,28 @@ import testimonial3 from "@/assets/testimonial-3.jpg";
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      name: "Priya Sharma",
-      college: "DU - Delhi University",
-      course: "B.Com (Hons)",
+      name: "Rahul Sharma",
+      college: "SRM Institute of Science & Technology",
+      course: "B.Tech Computer Science",
       image: testimonial1,
       rating: 5,
-      testimonial: "CCC helped me navigate the complex college admission process with ease. Their personalized guidance was exactly what I needed to get into my dream college. The counselors understood my strengths and helped me choose the perfect course."
+      testimonial: "CCC helped me get into SRM University for B.Tech CSE, and Trainlance's programming courses from first year gave me a huge advantage. I secured a software engineering internship in my second year itself!"
     },
     {
-      name: "Arjun Patel",
-      college: "IIT Bombay",
-      course: "Computer Science",
+      name: "Priya Patel",
+      college: "Manipal Institute of Technology",
+      course: "B.Tech Information Technology",
       image: testimonial2,
       rating: 5,
-      testimonial: "I was completely lost after 12th grade. CCC not only helped me discover my passion for computer science but also provided the roadmap to achieve my goals. Today, I'm proud to be studying at IIT Bombay!"
+      testimonial: "The admission process was so smooth with CCC's support. But what really made the difference was Trainlance's soft skills and aptitude training. I'm now confident in interviews and have already received a pre-placement offer!"
     },
     {
-      name: "Sarah Johnson",
-      college: "BITS Pilani",
-      course: "Biotechnology",
+      name: "Arjun Kumar",
+      college: "VIT Vellore",
+      course: "B.Tech Electronics & Communication",
       image: testimonial3,
       rating: 5,
-      testimonial: "The mentorship and support I received from CCC was incredible. They helped me explore career options I never knew existed and guided me through every step of the application process. Highly recommended!"
+      testimonial: "CCC found me the perfect college match at VIT, and Trainlance's comprehensive training program helped me build skills beyond my curriculum. I'm graduating with both technical expertise and industry-ready soft skills."
     }
   ];
 

@@ -24,16 +24,16 @@ const Header = () => {
           <nav className="hidden md:flex items-center space-x-8">
             <a href="#home" className="text-foreground hover:text-primary transition-colors">Home</a>
             <a href="#about" className="text-foreground hover:text-primary transition-colors">About</a>
-            <a href="#how-it-works" className="text-foreground hover:text-primary transition-colors">How It Works</a>
-            <a href="#testimonials" className="text-foreground hover:text-primary transition-colors">Success Stories</a>
-            <a href="#partners" className="text-foreground hover:text-primary transition-colors">Partners</a>
-            <a href="#contact" className="text-foreground hover:text-primary transition-colors">Contact</a>
+            <a href="#services" className="text-foreground hover:text-primary transition-colors">Services</a>
+            <a href="#partners" className="text-foreground hover:text-primary transition-colors">Partner Colleges</a>
+            <a href="#trainlance" className="text-foreground hover:text-primary transition-colors">Training (Trainlance)</a>
+            <a href="#contact" className="text-foreground hover:text-primary transition-colors">Contact Us</a>
           </nav>
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center space-x-4">
             <Button variant="outline" size="sm">Sign In</Button>
-            <Button variant="cta" size="sm">Join CCC</Button>
+            <Button variant="cta" size="sm">Join Now</Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -51,13 +51,13 @@ const Header = () => {
             <nav className="flex flex-col space-y-4">
               <a href="#home" className="text-foreground hover:text-primary transition-colors">Home</a>
               <a href="#about" className="text-foreground hover:text-primary transition-colors">About</a>
-              <a href="#how-it-works" className="text-foreground hover:text-primary transition-colors">How It Works</a>
-              <a href="#testimonials" className="text-foreground hover:text-primary transition-colors">Success Stories</a>
-              <a href="#partners" className="text-foreground hover:text-primary transition-colors">Partners</a>
-              <a href="#contact" className="text-foreground hover:text-primary transition-colors">Contact</a>
+              <a href="#services" className="text-foreground hover:text-primary transition-colors">Services</a>
+              <a href="#partners" className="text-foreground hover:text-primary transition-colors">Partner Colleges</a>
+              <a href="#trainlance" className="text-foreground hover:text-primary transition-colors">Training (Trainlance)</a>
+              <a href="#contact" className="text-foreground hover:text-primary transition-colors">Contact Us</a>
               <div className="flex flex-col space-y-2 pt-4">
                 <Button variant="outline" size="sm">Sign In</Button>
-                <Button variant="cta" size="sm">Join CCC</Button>
+                <Button variant="cta" size="sm">Join Now</Button>
               </div>
             </nav>
           </div>

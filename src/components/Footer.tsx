@@ -32,9 +32,10 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><a href="#home" className="text-primary-foreground/80 hover:text-accent transition-colors">Home</a></li>
               <li><a href="#about" className="text-primary-foreground/80 hover:text-accent transition-colors">About Us</a></li>
-              <li><a href="#how-it-works" className="text-primary-foreground/80 hover:text-accent transition-colors">How It Works</a></li>
+              <li><a href="#services" className="text-primary-foreground/80 hover:text-accent transition-colors">Services</a></li>
               <li><a href="#testimonials" className="text-primary-foreground/80 hover:text-accent transition-colors">Success Stories</a></li>
-              <li><a href="#partners" className="text-primary-foreground/80 hover:text-accent transition-colors">College Partners</a></li>
+              <li><a href="#partners" className="text-primary-foreground/80 hover:text-accent transition-colors">Partner Colleges</a></li>
+              <li><a href="#trainlance" className="text-primary-foreground/80 hover:text-accent transition-colors">Training (Trainlance)</a></li>
               <li><a href="#contact" className="text-primary-foreground/80 hover:text-accent transition-colors">Contact Us</a></li>
             </ul>
           </div>
@@ -43,12 +44,13 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Our Services</h4>
             <ul className="space-y-2">
+              <li><span className="text-primary-foreground/80">B.Tech College Placement</span></li>
               <li><span className="text-primary-foreground/80">Career Counseling</span></li>
-              <li><span className="text-primary-foreground/80">College Admission</span></li>
-              <li><span className="text-primary-foreground/80">Scholarship Guidance</span></li>
-              <li><span className="text-primary-foreground/80">Course Selection</span></li>
-              <li><span className="text-primary-foreground/80">Entrance Exam Prep</span></li>
-              <li><span className="text-primary-foreground/80">Mentorship Programs</span></li>
+              <li><span className="text-primary-foreground/80">Admission Support</span></li>
+              <li><span className="text-primary-foreground/80">Trainlance Skill Training</span></li>
+              <li><span className="text-primary-foreground/80">Programming Courses</span></li>
+              <li><span className="text-primary-foreground/80">Soft Skills Development</span></li>
+              <li><span className="text-primary-foreground/80">Aptitude Training</span></li>
             </ul>
           </div>
 
