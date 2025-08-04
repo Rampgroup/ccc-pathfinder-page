@@ -5,33 +5,35 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap font-semibold ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap font-bold ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
   {
     variants: {
       variant: {
-        default: "bg-gradient-primary text-white hover:shadow-glow hover:scale-105 rounded-full",
+        default: "bg-gradient-primary text-white hover:shadow-elegant hover:scale-[1.02] rounded-2xl shadow-card",
         destructive:
-          "bg-destructive text-destructive-foreground hover:bg-destructive/90 rounded-full",
+          "bg-destructive text-destructive-foreground hover:bg-destructive/90 rounded-2xl shadow-card",
         outline:
-          "border-2 border-primary text-primary bg-transparent hover:bg-primary hover:text-white rounded-full",
+          "border-2 border-primary text-primary bg-background hover:bg-primary hover:text-white rounded-2xl hover:scale-[1.02] shadow-card hover:shadow-elegant",
         secondary:
-          "bg-gradient-secondary text-white hover:shadow-glow hover:scale-105 rounded-full",
+          "bg-gradient-secondary text-white hover:shadow-elegant hover:scale-[1.02] rounded-2xl shadow-card",
         accent:
-          "bg-gradient-accent text-white hover:shadow-glow hover:scale-105 rounded-full",
-        ghost: "hover:bg-primary/10 hover:text-primary rounded-full",
+          "bg-gradient-accent text-white hover:shadow-elegant hover:scale-[1.02] rounded-2xl shadow-card",
+        ghost: "hover:bg-muted/80 hover:text-foreground rounded-2xl",
         link: "text-primary underline-offset-4 hover:underline",
-        cta: "bg-gradient-to-r from-secondary to-secondary-light text-white font-bold shadow-medium hover:shadow-large hover:scale-105 rounded-full",
-        "cta-outline": "border-2 border-primary text-primary bg-transparent hover:bg-primary hover:text-white hover:scale-105 rounded-full",
-        modern: "bg-white text-primary border border-primary/20 hover:bg-primary hover:text-white shadow-soft hover:shadow-medium rounded-2xl",
-        hero: "bg-gradient-accent text-accent-foreground shadow-glow hover:shadow-large hover:scale-105 transition-all duration-300 font-bold rounded-full",
-        gradient: "bg-gradient-primary text-primary-foreground hover:shadow-glow transition-all duration-300 rounded-full",
+        cta: "bg-gradient-primary text-white font-black shadow-card hover:shadow-elegant hover:scale-[1.02] hover:shadow-glow rounded-2xl",
+        "cta-outline": "border-2 border-primary text-primary bg-background hover:bg-primary hover:text-white hover:scale-[1.02] rounded-2xl shadow-card",
+        "cta-secondary": "bg-gradient-secondary text-white font-black shadow-card hover:shadow-elegant hover:scale-[1.02] rounded-2xl",
+        "cta-accent": "bg-gradient-accent text-white font-black shadow-card hover:shadow-elegant hover:scale-[1.02] rounded-2xl",
+        modern: "bg-white text-primary border border-border hover:bg-primary hover:text-white shadow-card hover:shadow-elegant rounded-2xl hover:scale-[1.02]",
+        hero: "bg-gradient-accent text-white shadow-elegant hover:shadow-glow hover:scale-[1.02] transition-all duration-300 font-black rounded-2xl",
+        gradient: "bg-gradient-primary text-white hover:shadow-glow transition-all duration-300 rounded-2xl shadow-card",
       },
       size: {
-        default: "h-12 px-6 py-3",
-        sm: "h-9 px-4 py-2 text-sm",
+        default: "h-12 px-6 py-3 text-base",
+        sm: "h-10 px-4 py-2 text-sm",
         lg: "h-14 px-8 py-4 text-lg",
         xl: "h-16 px-10 py-5 text-xl",
-        icon: "h-10 w-10",
+        icon: "h-12 w-12",
       },
     },
     defaultVariants: {

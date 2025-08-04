@@ -26,19 +26,19 @@ const Header = () => {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled 
-        ? 'bg-white/95 backdrop-blur-md shadow-medium border-b border-border/50' 
+        ? 'bg-white/95 backdrop-blur-md shadow-card border-b border-border/30' 
         : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex items-center space-x-3 group">
-            <div className="p-2 bg-gradient-primary rounded-2xl shadow-soft group-hover:shadow-glow transition-all duration-300">
+          <div className="flex items-center space-x-4 group">
+            <div className="p-3 bg-gradient-primary rounded-2xl shadow-card group-hover:shadow-elegant transition-all duration-300 group-hover:scale-105">
               <GraduationCap className="w-8 h-8 text-white" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold font-poppins gradient-text">Campus Career Club</h1>
-              <p className="text-sm text-muted-foreground font-medium">Your Success Partner from Inter to Career</p>
+              <h1 className="text-2xl font-black font-poppins gradient-text tracking-tight">Campus Career Club</h1>
+              <p className="text-sm text-muted-foreground font-semibold">Your Success Partner from Inter to Career</p>
             </div>
           </div>
 
@@ -58,12 +58,12 @@ const Header = () => {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center space-x-4">
-            <Button variant="cta-outline" size="sm" className="font-semibold">
+            <Button variant="outline" size="sm" className="font-bold">
               <Phone className="w-4 h-4 mr-2" />
               Book Free Call
             </Button>
-            <Button variant="cta" size="sm" className="font-semibold">
-              Find Your College
+            <Button variant="cta" size="sm" className="font-bold">
+              Get Started
             </Button>
           </div>
 
@@ -99,12 +99,12 @@ const Header = () => {
               </a>
             ))}
             <div className="flex flex-col space-y-3 pt-4 px-4">
-              <Button variant="cta-outline" size="sm" className="w-full font-semibold">
+              <Button variant="outline" size="sm" className="w-full font-bold">
                 <Phone className="w-4 h-4 mr-2" />
                 Book Free Call
               </Button>
-              <Button variant="cta" size="sm" className="w-full font-semibold">
-                Find Your College
+              <Button variant="cta" size="sm" className="w-full font-bold">
+                Get Started
               </Button>
             </div>
           </nav>

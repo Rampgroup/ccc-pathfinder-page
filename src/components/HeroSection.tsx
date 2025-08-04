@@ -9,25 +9,25 @@ const HeroSection = () => {
       <div className="absolute inset-0 z-0">
         <img 
           src={heroStudents} 
-          alt="Students achieving success"
-          className="w-full h-full object-cover opacity-20"
+          alt="Students achieving success in their academic journey"
+          className="w-full h-full object-cover opacity-15"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary/70 to-secondary/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-secondary/85 to-accent/75"></div>
       </div>
 
       {/* Floating Elements */}
-      <div className="absolute top-20 left-10 animate-float">
-        <div className="glass p-4 rounded-2xl">
+      <div className="absolute top-20 left-10 animate-float hidden md:block">
+        <div className="glass p-4 rounded-2xl shadow-elegant">
           <Star className="w-8 h-8 text-accent" />
         </div>
       </div>
-      <div className="absolute top-40 right-20 animate-float" style={{ animationDelay: '2s' }}>
-        <div className="glass p-4 rounded-2xl">
+      <div className="absolute top-40 right-20 animate-float hidden md:block" style={{ animationDelay: '2s' }}>
+        <div className="glass p-4 rounded-2xl shadow-elegant">
           <Award className="w-8 h-8 text-secondary" />
         </div>
       </div>
-      <div className="absolute bottom-40 left-20 animate-float" style={{ animationDelay: '4s' }}>
-        <div className="glass p-4 rounded-2xl">
+      <div className="absolute bottom-40 left-20 animate-float hidden md:block" style={{ animationDelay: '4s' }}>
+        <div className="glass p-4 rounded-2xl shadow-elegant">
           <TrendingUp className="w-8 h-8 text-accent" />
         </div>
       </div>
@@ -36,25 +36,24 @@ const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-5xl mx-auto">
           {/* Badge */}
-          <div className="inline-flex items-center px-6 py-3 mb-8 bg-white/20 backdrop-blur-sm rounded-full border border-white/30 animate-bounce-in">
-            <Users className="w-5 h-5 text-white mr-2" />
-            <span className="text-white font-semibold">10,000+ Students Already Placed in Top Colleges!</span>
+          <div className="inline-flex items-center px-8 py-4 mb-8 bg-white/20 backdrop-blur-md rounded-2xl border border-white/30 animate-bounce-in shadow-elegant">
+            <Users className="w-5 h-5 text-white mr-3" />
+            <span className="text-white font-bold text-sm md:text-base">10,000+ Students Already Placed in Top Colleges!</span>
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold font-poppins text-white mb-6 animate-fade-in-up leading-tight">
-            Turn Your Engineering
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black font-poppins text-white mb-6 animate-fade-in-up leading-tight text-balance">
+            From Dream College
             <br />
-            <span className="bg-gradient-to-r from-accent to-accent-light bg-clip-text text-transparent">
-              Dreams into Reality
-            </span>
+            to 
+            <span className="bg-gradient-to-r from-accent to-accent-light bg-clip-text text-transparent"> Dream Job</span>
           </h1>
 
           {/* Subheadline */}
-          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto font-medium leading-relaxed animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-            Get into your dream B.Tech college with expert guidance. Then master 
-            <span className="text-accent font-semibold"> in-demand skills</span> with our 4-year training program. 
-            We are with you from Inter results to your first job offer!
+          <p className="text-lg md:text-xl text-white/95 mb-10 max-w-4xl mx-auto font-medium leading-relaxed animate-fade-in-up text-balance" style={{ animationDelay: "0.2s" }}>
+            Your complete journey partner from 12th to career success. We help you secure admission in top B.Tech colleges, 
+            then train you with <span className="text-accent font-bold">industry-ready skills</span> for guaranteed job placement. 
+            Join 10,000+ students who achieved their dreams with CCC.
           </p>
 
           {/* Stats Row */}
@@ -81,17 +80,17 @@ const HeroSection = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 animate-fade-in-up" style={{ animationDelay: "0.6s" }}>
-            <Button variant="cta" size="xl" className="text-xl font-bold hover:scale-110 transition-all duration-300 shadow-2xl">
+            <Button variant="hero" size="xl" className="text-xl font-black shadow-elegant hover:shadow-glow">
               Start Your Journey
-              <ArrowRight className="w-6 h-6 ml-2" />
+              <ArrowRight className="w-6 h-6 ml-3" />
             </Button>
             <Button 
               variant="outline" 
               size="xl" 
-              className="text-xl font-bold border-2 border-white text-white hover:bg-white hover:text-primary backdrop-blur-sm bg-white/10"
+              className="text-xl font-bold border-2 border-white text-white hover:bg-white hover:text-primary backdrop-blur-md bg-white/15 shadow-card hover:shadow-elegant"
             >
-              <Play className="w-6 h-6 mr-2" />
-              See Success Stories
+              <Play className="w-6 h-6 mr-3" />
+              Explore Colleges
             </Button>
           </div>
 
