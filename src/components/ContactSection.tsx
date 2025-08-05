@@ -5,8 +5,11 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const ContactSection = () => {
+  const navigate = useNavigate();
+
   return (
     <section id="contact" className="py-20 bg-gradient-subtle">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -164,7 +167,12 @@ const ContactSection = () => {
                     <Button type="submit" variant="cta" size="lg" className="flex-1">
                       Send Message
                     </Button>
-                    <Button type="button" variant="outline" size="lg">
+                    <Button 
+                      type="button" 
+                      variant="outline" 
+                      size="lg"
+                      onClick={() => navigate("/schedule-call")}
+                    >
                       Schedule Call
                     </Button>
                   </div>
