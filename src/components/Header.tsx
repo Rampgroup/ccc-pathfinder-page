@@ -38,7 +38,7 @@ const Header = () => {
             </div>
             <div>
               <h1 className="text-2xl font-black font-poppins gradient-text tracking-tight">Campus Career Club</h1>
-              <p className="text-sm text-muted-foreground font-semibold">Your Success Partner from Inter to Career</p>
+              <p className="text-sm text-muted-foreground font-semibold">Your Journey from College Dreams to Career Goals</p>
             </div>
           </div>
 
