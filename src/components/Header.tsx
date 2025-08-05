@@ -38,7 +38,7 @@ const Header = () => {
             </div>
             <div>
               <h1 className="text-2xl font-black font-poppins gradient-text tracking-tight">Campus Career Club</h1>
-              <p className="text-sm text-muted-foreground font-semibold">Your Success Partner from Inter to Career</p>
+              <p className="text-sm text-muted-foreground font-semibold">Your Journey from College Dreams to Career Goals</p>
             </div>
           </div>
 
@@ -82,23 +82,25 @@ const Header = () => {
         </div>
 
         {/* Mobile Menu */}
-        <div className={`lg:hidden transition-all duration-300 overflow-hidden ${
-          isMenuOpen 
-            ? 'max-h-96 opacity-100 pb-6' 
-            : 'max-h-0 opacity-0'
-        }`}>
-          <nav className="flex flex-col space-y-4 pt-4 border-t border-border/50">
+        <div
+          className={`lg:hidden fixed top-20 left-0 w-full bg-background shadow-lg z-40 transition-all duration-300 ${
+            isMenuOpen ? 'max-h-[500px] opacity-100 pb-6' : 'max-h-0 opacity-0'
+          }`}
+          style={{ pointerEvents: isMenuOpen ? 'auto' : 'none' }}
+        >
+          <nav className="flex flex-col space-y-4 pt-4 border-t border-border/50 px-4">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsMenuOpen(false)}
-                className="text-foreground hover:text-primary font-medium transition-colors duration-200 py-2 px-4 rounded-xl hover:bg-muted"
+                className="text-foreground hover:text-primary font-medium transition-colors duration-200 py-2 px-4 rounded-xl hover:bg-muted focus:outline-none focus:ring-2 focus:ring-primary"
+                tabIndex={isMenuOpen ? 0 : -1}
               >
                 {link.name}
               </a>
             ))}
-            <div className="flex flex-col space-y-3 pt-4 px-4">
+            <div className="flex flex-col space-y-3 pt-4">
               <Button variant="outline" size="sm" className="w-full font-bold">
                 <Phone className="w-4 h-4 mr-2" />
                 Book Free Call

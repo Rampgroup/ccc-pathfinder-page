@@ -175,17 +175,17 @@ const ContactSection = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="mt-16 text-center bg-gradient-primary rounded-2xl p-8 text-white">
+        <div className="mt-16 text-center bg-gradient-secondary rounded-2xl p-8 text-white">
           <h3 className="text-2xl font-bold mb-4">Ready to Transform Your Future?</h3>
           <p className="text-white/90 mb-6 max-w-2xl mx-auto">
             Join thousands of successful students who found their perfect college and career path with Campus Career Club. 
             Your journey to success starts with a single step.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="hero" size="lg">
+            <Button variant="hero" size="lg" className="bg-white/10 border-grey/30 text-white hover:bg-white/20">
               Start Free Consultation
             </Button>
-            <Button variant="outline" size="lg" className="bg-white/10 border-white/30 text-white hover:bg-white/20">
+            <Button variant="hero" size="lg" className="bg-white/10 border-grey/30 text-white hover:bg-white/20">
               Download Brochure
             </Button>
           </div>

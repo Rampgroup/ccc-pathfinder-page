@@ -41,7 +41,7 @@ const AboutSection = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           <div className="space-y-8">
             <div>
-              <h3 className="text-3xl font-black text-primary mb-6 text-balance">Why CCC is Different</h3>
+              <h3 className="text-3xl font-black text-blue-600 mb-6 text-balance">Why CCC is Different</h3>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
                 We know what it's like to feel lost after 12th grade. That's why CCC exists - to be 
                 your trusted guide from Inter results to your first job offer. We don't just help you get admission, 

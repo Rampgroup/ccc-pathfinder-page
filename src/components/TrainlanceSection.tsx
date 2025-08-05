@@ -136,20 +136,20 @@ const TrainlanceSection = () => {
 
         {/* Training Timeline */}
         <div className="bg-gradient-subtle rounded-2xl p-8">
-          <h3 className="text-2xl font-bold text-primary text-center mb-8">
+          <h3 className="text-2xl font-bold text-primary text-center mb-8 bg-[#E3F2FD] text-primary rounded-lg py-3">
             4-Year Training Journey
           </h3>
           
           <div className="grid md:grid-cols-4 gap-6">
             {[
-              { year: "1st Year", focus: "Foundation Skills", details: "Basic programming, communication fundamentals" },
-              { year: "2nd Year", focus: "Intermediate Skills", details: "Advanced programming, soft skills development" },
-              { year: "3rd Year", focus: "Specialization", details: "Domain expertise, project-based learning" },
-              { year: "4th Year", focus: "Industry Readiness", details: "Interview preparation, real-world projects" }
+              { year: "1st Year", focus: "Foundation Skills", details: ["Aptitude,", "Basic programming,", "communication fundamentals"] },
+              { year: "2nd Year", focus: "Intermediate Skills", details: ["Advanced programming,", "soft skills development"] },
+              { year: "3rd Year", focus: "Specialization", details: ["Domain expertise,", "project-based learning"] },
+              { year: "4th Year", focus: "Industry Readiness", details: ["Interview preparation,", "real-world projects"] }
             ].map((phase, index) => (
               <div key={index} className="text-center">
-                <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-white font-bold">{index + 1}</span>
+                <div className="w-12 h-12 bg-gradient-to-br from-[#F5F5F5] to-[#E0E0E0] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-black font-bold">{index + 1}</span>
                 </div>
                 <h4 className="font-semibold text-primary mb-2">{phase.year}</h4>
                 <h5 className="font-medium text-accent mb-2">{phase.focus}</h5>
