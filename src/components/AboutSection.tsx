@@ -29,12 +29,16 @@ const AboutSection = () => {
     <section id="about" className="content-section">
       <div className="container mx-auto">
         <div className="text-center mb-20">
-          <h2 className="font-black text-primary mb-6 text-balance">
-            Your Success Partner from <span className="text-accent">Inter to Career</span>
-          </h2>
+         <h2 className="font-black mb-6 text-balance">
+  <span className="text-green-600">From Admission</span>{' '}
+  <span className="text-orange-600">to Ambition</span>{' '}
+  <span className="text-blue-600">we're with you</span>
+</h2>
+
           <p className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed text-balance">
-            We understand the confusion after 12th grade. Which college? What course? How to build skills? 
-            CCC is your complete mentor throughout this journey - from choosing the right B.Tech college to landing your dream job.
+            We understand the confusion after 12th grade.<br></br> Which college? What course? How to build skills? 
+            CCC is your complete mentor throughout this journey - from choosing the right B.Tech college to landing your dream job. <br></br><b className="text-neutral-900">we are with you</b>.
+
           </p>
         </div>
 
@@ -87,7 +91,7 @@ const AboutSection = () => {
             {values.map((value, index) => {
               const IconComponent = value.icon;
               return (
-                <Card key={index} className="border border-border/30 shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 group">
+                <Card key={index} className="border-2 border-teal/500 shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 group">
                   <CardContent className="p-8 text-center">
                     <div className="w-16 h-16 border-2 border-primary rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-card">
                       <IconComponent className="w-8 h-8 text-primary" />
@@ -104,7 +108,7 @@ const AboutSection = () => {
         <div className="section-divider"></div>
         
         {/* Enhanced Statistics */}
-        <div className="border-2 border-border/20 rounded-3xl p-10 shadow-elegant">
+        <div className="border-2 border-border/200 rounded-3xl p-10 shadow-elegant">
           <h3 className="text-2xl font-black text-primary text-center mb-8">Our Track Record Speaks</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center group">

@@ -2,12 +2,12 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const PartnersSection = () => {
   const partners = [
-    { name: "SRM Institute", logo: "/assets/srm-logo.png", category: "Engineering", location: "Chennai", ranking: "#5 Private Engineering" },
-    { name: "VIT University", logo: "/assets/vit-logo.png", category: "Engineering", location: "Vellore", ranking: "#8 Private Engineering" },
-    { name: "Manipal Institute", logo: "/assets/manipal-logo.png", category: "Technology", location: "Karnataka", ranking: "#12 Engineering" },
-    { name: "KIIT University", logo: "/assets/kiit-logo.png", category: "Engineering", location: "Bhubaneswar", ranking: "#15 Private Engineering" },
-    { name: "Kalinga University", logo: "/assets/kalinga-logo.png", category: "Engineering", location: "Raipur", ranking: "#20 Private Engineering" },
-    { name: "LPU", logo: "/assets/lpu-logo.png", category: "Engineering", location: "Punjab", ranking: "#25 Private Engineering" },
+    { name: "SRM Institute", logo: "images/srm-logo.jpg", category: "Engineering", location: "Chennai", ranking: "#5 Private Engineering" },
+    { name: "VIT University", logo: "images/vit-logo.png", category: "Engineering", location: "Vellore", ranking: "#8 Private Engineering" },
+    { name: "Manipal Institute", logo: "images/manipal-logo.png", category: "Technology", location: "Karnataka", ranking: "#12 Engineering" },
+    { name: "KIIT University", logo: "images/kiit-logo.png", category: "Engineering", location: "Bhubaneswar", ranking: "#15 Private Engineering" },
+    { name: "Kalinga University", logo: "images/kalinga-logo.png", category: "Engineering", location: "Raipur", ranking: "#20 Private Engineering" },
+    { name: "LPU", logo: "images/lpu-logo.png", category: "Engineering", location: "Punjab", ranking: "#25 Private Engineering" },
     { name: "Amity University", logo: "/assets/amity-logo.png", category: "Engineering", location: "Noida", ranking: "#30 Private Engineering" },
     { name: "Bennett University", logo: "/assets/bennett-logo.png", category: "Engineering", location: "Greater Noida", ranking: "#35 Private Engineering" },
     { name: "Shoolini University", logo: "/assets/shoolini-logo.png", category: "Engineering", location: "Himachal Pradesh", ranking: "#40 Private Engineering" },
@@ -34,7 +34,7 @@ const PartnersSection = () => {
         </div> */}
 
         {/* Categories */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-2">
           {categories.map((category, index) => (
             <Card key={index} className="border-0 shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-1">
               <CardContent className="p-6 text-center">
@@ -49,14 +49,14 @@ const PartnersSection = () => {
         </div>
 
         {/* Partner Logos/Names */}
-        <div className="bg-gradient-subtle rounded-2xl p-8">
-          <h3 className="text-2xl font-bold text-primary text-center mb-8">Top B.Tech College Partners</h3>
+        <div className="bg-gradient-subtle rounded-2xl p-8 mb-4">
+          <h3 className="text-2xl font-bold text-primary text-center mb-6">Top B.Tech College Partners</h3>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {partners.map((partner, index) => (
               <Card key={index} className="bg-white border-0 shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 group">
                 <CardContent className="p-6 text-center">
-                  <div className="w-20 h-20 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 overflow-hidden">
+                  <div className="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 overflow-hidden">
                     <img src={partner.logo} alt={partner.name + ' logo'} className="w-16 h-16 object-contain rounded-full" />
                   </div>
                   <h4 className="font-semibold text-primary text-lg mb-2">{partner.name}</h4>
@@ -65,7 +65,7 @@ const PartnersSection = () => {
                     {partner.ranking}
                   </p>
                   <div className="mt-3">
-                    <span className="text-xs text-muted-foreground bg-secondary rounded-full px-2 py-1">
+                    <span className="text-xs text-black bg-gray-100 rounded-full px-4 py-1">
                       {partner.category}
                     </span>
                   </div>

@@ -81,6 +81,12 @@ const HeroSection = () => {
               variant="outline" 
               size="xl" 
               className="text-xl font-bold border-2 border-primary text-primary hover:text-primary-dark backdrop-blur-md shadow-card hover:shadow-elegant"
+              onClick={() => {
+                const el = document.getElementById('partners');
+                if (el) {
+                  el.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
             >
               <Play className="w-6 h-6 mr-3" />
               Explore Colleges
@@ -91,15 +97,15 @@ const HeroSection = () => {
           <div className="mt-16 flex flex-wrap items-center justify-center gap-8 text-muted-foreground animate-fade-in-up" style={{ animationDelay: "0.8s" }}>
             <div className="flex items-center space-x-2">
               <div className="w-2 h-2 border border-accent rounded-full"></div>
-              <span className="text-sm font-medium">Trusted by India's Top Colleges</span>
+              <span className="text-sm font-medium text-gray-900">Trusted by India's Top Colleges</span>
             </div>
             <div className="flex items-center space-x-2">
               <div className="w-2 h-2 border border-secondary rounded-full"></div>
-              <span className="text-sm font-medium">Complete Skill Training Included</span>
+              <span className="text-sm font-medium text-gray-900">Complete Skill Training Included</span>
             </div>
             <div className="flex items-center space-x-2">
               <div className="w-2 h-2 border border-accent rounded-full"></div>
-              <span className="text-sm font-medium">End-to-End Admission Support</span>
+              <span className="text-sm font-medium text-gray-900">End-to-End Admission Support</span>
             </div>
           </div>
         </div>
@@ -107,9 +113,9 @@ const HeroSection = () => {
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-primary/50 rounded-full flex justify-center">
+        {/* <div className="w-6 h-10 border-2 border-primary/50 rounded-full flex justify-center">
           <div className="w-1 h-3 border border-primary/70 rounded-full mt-2 animate-pulse"></div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

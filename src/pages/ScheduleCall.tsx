@@ -16,7 +16,9 @@ import { ArrowLeft, Phone } from "lucide-react";
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
   countryCode: z.string().default("+91"),
-  mobile: z.string().min(10, "Mobile number must be at least 10 digits"),
+  mobile: z.string()
+    .length(10, "Mobile number must be exactly 10 digits")
+    .regex(/^[6-9][0-9]{9}$/, "Mobile number must start with 6, 7, 8, or 9 and be 10 digits"),
   qualification: z.string().min(1, "Please select your highest qualification"),
   state: z.string().min(1, "Please select your native state"),
   receiveUpdates: z.boolean().default(false),
@@ -89,7 +91,7 @@ const ScheduleCall = () => {
           <div className="order-2 lg:order-1">
             <Card className="border-0 shadow-card">
               <CardHeader className="text-center">
-                <CardTitle className="text-2xl md:text-3xl font-bold text-primary">
+                <CardTitle className="text-2xl md:text-3xl font-bold text-grey-700 mb-4">
                   Talk to Our Career Expert
                 </CardTitle>
               </CardHeader>
@@ -110,9 +112,23 @@ const ScheduleCall = () => {
                         </FormItem>
                       )}
                     />
+                    {/* Phone Number */}
+                    <FormField
+                      control={form.control}
+                      name="mobile"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Phone Number</FormLabel>
+                          <FormControl>
+                            <Input placeholder="Enter your phone number" maxLength={10} {...field} />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
 
                     {/* Mobile Number */}
-                    <div>
+                    {/* <div>
                       <Label>Mobile Number</Label>
                       <div className="flex gap-2 mt-1">
                         <FormField
@@ -154,30 +170,18 @@ const ScheduleCall = () => {
                         >
                           {otpSent ? "Resend OTP" : "GET OTP"}
                         </Button>
-                      </div>
-                    </div>
-
+                      </div> */}
+                    
                     {/* Highest Qualification */}
                     <FormField
                       control={form.control}
                       name="qualification"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Highest Qualification</FormLabel>
-                          <Select onValueChange={field.onChange}>
-                            <FormControl>
-                              <SelectTrigger>
-                                <SelectValue placeholder="---Select---" />
-                              </SelectTrigger>
-                            </FormControl>
-                            <SelectContent>
-                              <SelectItem value="10th">10th Grade</SelectItem>
-                              <SelectItem value="12th">12th Grade</SelectItem>
-                              <SelectItem value="diploma">Diploma</SelectItem>
-                              <SelectItem value="graduate">Graduate</SelectItem>
-                              <SelectItem value="postgraduate">Post Graduate</SelectItem>
-                            </SelectContent>
-                          </Select>
+                          <FormLabel>College Name</FormLabel>
+                          <FormControl>
+                            <Input placeholder="Enter your college name" {...field} />
+                          </FormControl>
                           <FormMessage />
                         </FormItem>
                       )}
@@ -189,25 +193,12 @@ const ScheduleCall = () => {
                       name="state"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Native State</FormLabel>
-                          <Select onValueChange={field.onChange}>
-                            <FormControl>
-                              <SelectTrigger>
-                                <SelectValue placeholder="Enter your State" />
-                              </SelectTrigger>
-                            </FormControl>
-                            <SelectContent>
-                              <SelectItem value="uttar-pradesh">Uttar Pradesh</SelectItem>
-                              <SelectItem value="maharashtra">Maharashtra</SelectItem>
-                              <SelectItem value="delhi">Delhi</SelectItem>
-                              <SelectItem value="karnataka">Karnataka</SelectItem>
-                              <SelectItem value="tamil-nadu">Tamil Nadu</SelectItem>
-                              <SelectItem value="west-bengal">West Bengal</SelectItem>
-                              <SelectItem value="rajasthan">Rajasthan</SelectItem>
-                              <SelectItem value="gujarat">Gujarat</SelectItem>
-                              <SelectItem value="other">Other</SelectItem>
-                            </SelectContent>
-                          </Select>
+                          <FormLabel>Native Village</FormLabel>
+                          <FormControl>
+                            <Input placeholder="Enter your Village n ame" {...field} />
+                          </FormControl>
+                           
+                        
                           <FormMessage />
                         </FormItem>
                       )}
@@ -273,7 +264,7 @@ const ScheduleCall = () => {
 
           {/* Right side - Illustration */}
           <div className="order-1 lg:order-2 text-center">
-            <div className="bg-gradient-primary rounded-2xl p-8 text-white">
+            <div className="bg-gradient-to-b from-secondary to-secondary rounded-2xl p-8 text-white">
               <div className="mb-6">
                 <Phone className="w-16 h-16 mx-auto mb-4 opacity-90" />
                 <h3 className="text-2xl font-bold mb-4">Expert Career Guidance</h3>

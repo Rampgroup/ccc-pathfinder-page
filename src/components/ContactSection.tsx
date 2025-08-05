@@ -28,7 +28,7 @@ const ContactSection = () => {
           <div className="lg:col-span-1">
             <Card className="border-0 shadow-card h-full">
               <CardHeader>
-                <CardTitle className="text-primary">Contact Information</CardTitle>
+                <CardTitle className="text-darkgrey">Contact Information</CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
                 <div className="flex items-start space-x-3">
@@ -86,7 +86,7 @@ const ContactSection = () => {
           <div className="lg:col-span-2">
             <Card className="border-0 shadow-card">
               <CardHeader>
-                <CardTitle className="text-primary">Send us a Message</CardTitle>
+                <CardTitle className="text-secondary">Send us a Message</CardTitle>
               </CardHeader>
               <CardContent>
                 <form className="space-y-6">
