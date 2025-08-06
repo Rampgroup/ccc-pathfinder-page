@@ -8,17 +8,17 @@
     --background: 0 0% 100%;
     --foreground: 215 25% 27%;
     
-    /* Primary Teal - Trust & Academic Excellence */
-    --primary: 172 81% 40%;
+    /* Primary Navy - Deep & Trustworthy */
+    --primary: 211 100% 12%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 172 81% 50%;
-    --primary-dark: 172 81% 30%;
-    
-    /* Secondary Blue - Professional & Reliable */
-    --secondary: 217 91% 60%;
+    --primary-light: 211 100% 25%;
+    --primary-dark: 211 100% 8%;
+
+    /* Secondary Blue - Vibrant & Reliable */
+    --secondary: 203 48% 44%;
     --secondary-foreground: 0 0% 100%;
-    --secondary-light: 217 91% 70%;
-    --secondary-dark: 217 91% 50%;
+    --secondary-light: 203 48% 54%;
+    --secondary-dark: 203 48% 34%;
     
     /* Accent Orange - Energy & Achievement */
     --accent: 25 95% 61%;
@@ -35,7 +35,7 @@
     --popover-foreground: 215 25% 27%;
     --border: 214 32% 91%;
     --input: 214 32% 95%;
-    --ring: 172 81% 40%;
+    --ring: 203 48% 44%;
     --radius: 1rem;
     
     /* Modern Gradients */
