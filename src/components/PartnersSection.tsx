@@ -2,18 +2,18 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const PartnersSection = () => {
   const partners = [
-    { name: "SRM Institute", logo: "images/srm-logo.jpg", category: "Engineering", location: "Chennai", ranking: "#5 Private Engineering" },
-    { name: "VIT University", logo: "images/vit-logo.png", category: "Engineering", location: "Vellore", ranking: "#8 Private Engineering" },
-    { name: "Manipal Institute", logo: "images/manipal-logo.png", category: "Technology", location: "Karnataka", ranking: "#12 Engineering" },
-    { name: "KIIT University", logo: "images/kiit-logo.png", category: "Engineering", location: "Bhubaneswar", ranking: "#15 Private Engineering" },
-    { name: "Kalinga University", logo: "images/kalinga-logo.png", category: "Engineering", location: "Raipur", ranking: "#20 Private Engineering" },
-    { name: "LPU", logo: "images/lpu-logo.png", category: "Engineering", location: "Punjab", ranking: "#25 Private Engineering" },
-    { name: "Amity University", logo: "/assets/amity-logo.png", category: "Engineering", location: "Noida", ranking: "#30 Private Engineering" },
-    { name: "Bennett University", logo: "/assets/bennett-logo.png", category: "Engineering", location: "Greater Noida", ranking: "#35 Private Engineering" },
-    { name: "Shoolini University", logo: "/assets/shoolini-logo.png", category: "Engineering", location: "Himachal Pradesh", ranking: "#40 Private Engineering" },
-    { name: "Thapar Institute", logo: "/assets/thapar-logo.png", category: "Engineering", location: "Punjab", ranking: "#18 Private Engineering" },
-    { name: "UPES", logo: "/assets/upes-logo.png", category: "Engineering", location: "Dehradun", ranking: "#22 Private Engineering" },
-    { name: "ITM University", logo: "/assets/itm-logo.png", category: "Engineering", location: "Gwalior", ranking: "#45 Private Engineering" }
+    { name: "SRM Institute", logo: "src/assets/srm-logo.png", category: "Engineering", location: "Chennai", ranking: "#5 Private Engineering" },
+    { name: "VIT University", logo: "src/assets/vit-logo.png", category: "Engineering", location: "Vellore", ranking: "#8 Private Engineering" },
+    { name: "Manipal Institute", logo: "src/assets/manipal-logo.jpg", category: "Technology", location: "Karnataka", ranking: "#12 Engineering" },
+    { name: "GITAM University", logo: "src/assets/gitam.jpg", category: "Engineering", location: "Hyderabad,Vishakapatnam,Banglore", ranking: "#15 Private Engineering" },
+    { name: "VR Siddhartha Engineering College", logo: "src/assets/vrsiddardha.png", category: "Engineering", location: "Vijayawada", ranking: "#20 Private Engineering" },
+    { name: "LPU", logo: "src/assets/lpu-logo.png", category: "Engineering", location: "Punjab", ranking: "#25 Private Engineering" },
+    { name: "Amity University", logo: "src/assets/amity-logo.png", category: "Engineering", location: "Noida", ranking: "#30 Private Engineering" },
+    { name: "KL University", logo: "src/assets/kl-logo.png", category: "Engineering", location: "Hyderabad,Vijayawada", ranking: "#35 Private Engineering" },
+    { name: "Anurag University", logo: "src/assets/anurag-university-logo.png", category: "Engineering", location: "Hyderabad", ranking: "#40 Private Engineering" },
+    { name: "Mallareddy engineering college", logo: "src/assets/mallareddy-logo.jpg", category: "Engineering", location: "Hyderabad", ranking: "#18 Private Engineering" },
+    { name: "Amritha Vishwa Vidyapeetham", logo: "src/assets/amrita-logo.png", category: "Engineering", location: "Coimbatore", ranking: "#22 Private Engineering" },
+    { name: "Parul University", logo: "src/assets/Parul-University-Logo.png", category: "Engineering", location: "Gujarat", ranking: "#45 Private Engineering" }
   ];
 
   const categories = [
@@ -56,8 +56,8 @@ const PartnersSection = () => {
             {partners.map((partner, index) => (
               <Card key={index} className="bg-white border-0 shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 group">
                 <CardContent className="p-6 text-center">
-                  <div className="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 overflow-hidden">
-                    <img src={partner.logo} alt={partner.name + ' logo'} className="w-16 h-16 object-contain rounded-full" />
+                  <div className="w-28 h-28 rounded-full flex items-center justify-center mx-auto mb-1 group-hover:scale-110 transition-transform duration-300 overflow-hidden">
+                    <img src={partner.logo} alt={partner.name + ' logo'} className="w-24 h-24 object-contain rounded-full" />
                   </div>
                   <h4 className="font-semibold text-primary text-lg mb-2">{partner.name}</h4>
                   <p className="text-muted-foreground text-sm mb-1">{partner.location}</p>

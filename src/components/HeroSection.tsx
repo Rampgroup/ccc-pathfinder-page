@@ -10,23 +10,23 @@ const HeroSection = () => {
         <img 
           src={heroStudents} 
           alt="Students achieving success in their academic journey"
-          className="w-full h-full object-cover opacity-30"
+          className="w-full h-full object-cover opacity-25"
         />
       </div>
 
       {/* Floating Elements */}
       <div className="absolute top-20 left-10 animate-float hidden md:block">
-        <div className="border-2 border-accent p-4 rounded-2xl shadow-elegant backdrop-blur-sm">
+        <div className="border-2 border-accent p-4 rounded-2xl shadow-elegant backdrop-blur-md">
           <Star className="w-8 h-8 text-accent" />
         </div>
       </div>
       <div className="absolute top-40 right-20 animate-float hidden md:block" style={{ animationDelay: '2s' }}>
-        <div className="border-2 border-secondary p-4 rounded-2xl shadow-elegant backdrop-blur-sm">
+        <div className="border-2 border-secondary p-4 rounded-2xl shadow-elegant backdrop-blur-md">
           <Award className="w-8 h-8 text-secondary" />
         </div>
       </div>
       <div className="absolute bottom-40 left-20 animate-float hidden md:block" style={{ animationDelay: '4s' }}>
-        <div className="border-2 border-accent p-4 rounded-2xl shadow-elegant backdrop-blur-sm">
+        <div className="border-2 border-accent p-4 rounded-2xl shadow-elegant backdrop-blur-md">
           <TrendingUp className="w-8 h-8 text-accent" />
         </div>
       </div>

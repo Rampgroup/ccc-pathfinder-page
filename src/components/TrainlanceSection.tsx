@@ -142,10 +142,10 @@ const TrainlanceSection = () => {
           
           <div className="grid md:grid-cols-4 gap-6">
             {[
-              { year: "1st Year", focus: "Foundation Skills", details: ["Aptitude,", "Basic programming,", "communication fundamentals"] },
-              { year: "2nd Year", focus: "Intermediate Skills", details: ["Advanced programming,", "soft skills development"] },
-              { year: "3rd Year", focus: "Specialization", details: ["Domain expertise,", "project-based learning"] },
-              { year: "4th Year", focus: "Industry Readiness", details: ["Interview preparation,", "real-world projects"] }
+              { year: "Step-1", focus: "Foundation Skills", details: ["Aptitude,", "Basic programming,", "communication fundamentals"] },
+              { year: "Step-2", focus: "Intermediate Skills", details: ["Advanced programming,", "soft skills development"] },
+              { year: "Step-3", focus: "Specialization", details: ["Domain expertise,", "project-based learning"] },
+              { year: "Step-4", focus: "Industry Readiness", details: ["Interview preparation,", "real-world projects"] }
             ].map((phase, index) => (
               <div key={index} className="text-center">
                 <div className="w-12 h-12 bg-gradient-to-br from-[#F5F5F5] to-[#E0E0E0] rounded-full flex items-center justify-center mx-auto mb-4">

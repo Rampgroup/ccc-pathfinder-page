@@ -195,7 +195,7 @@ const ScheduleCall = () => {
                         <FormItem>
                           <FormLabel>Native Village</FormLabel>
                           <FormControl>
-                            <Input placeholder="Enter your Village n ame" {...field} />
+                            <Input placeholder="Enter your Village name" {...field} />
                           </FormControl>
                            
                         
