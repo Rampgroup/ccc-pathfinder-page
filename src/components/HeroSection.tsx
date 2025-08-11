@@ -21,7 +21,7 @@ const HeroSection = () => {
         <div className="text-center max-w-5xl mx-auto">
           {/* Main Headline */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-black font-poppins text-foreground mb-6 leading-tight text-balance">
-          <span className="text-primary">Campus Career Club</span>
+          <span className="text-primary">From Dream College</span>
             <br />
             <span className="text-primary">to</span>
             <span className="text-primary"> Dream Job</span>
