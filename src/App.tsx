@@ -9,6 +9,7 @@ import AdminDashboard from "./pages/AdminDashboard";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsConditions from "./pages/TermsConditions";
 import ScheduleCall from "./pages/ScheduleCall";
+import MoreColleges from "./pages/Morecolleges";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/terms" element={<TermsConditions />} />
           <Route path="/schedule-call" element={<ScheduleCall />} />
+          <Route path="/morecolleges" element={<MoreColleges />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

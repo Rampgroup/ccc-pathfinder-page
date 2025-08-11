@@ -32,7 +32,7 @@ const ContactSection = () => {
               </CardHeader>
               <CardContent className="space-y-6">
                 <div className="flex items-start space-x-3">
-                  <MapPin className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
+                  <MapPin className="w-5 h-5 text-blue mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold text-primary mb-1">Address</h4>
                     <p className="text-muted-foreground text-sm">
@@ -43,7 +43,7 @@ const ContactSection = () => {
                 </div>
                 
                 <div className="flex items-start space-x-3">
-                  <Phone className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
+                  <Phone className="w-5 h-5 text-blue mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold text-primary mb-1">Phone</h4>
                     <p className="text-muted-foreground text-sm">+91 98765 43210</p>
@@ -52,7 +52,7 @@ const ContactSection = () => {
                 </div>
                 
                 <div className="flex items-start space-x-3">
-                  <Mail className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
+                  <Mail className="w-5 h-5 text-blue mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold text-primary mb-1">Email</h4>
                     <p className="text-muted-foreground text-sm">info@campuscareerclub.com</p>
@@ -61,7 +61,7 @@ const ContactSection = () => {
                 </div>
                 
                 <div className="flex items-start space-x-3">
-                  <Clock className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
+                  <Clock className="w-5 h-5 text-blue mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold text-primary mb-1">Office Hours</h4>
                     <p className="text-muted-foreground text-sm">Monday - Friday: 9:00 AM - 7:00 PM</p>
@@ -71,12 +71,12 @@ const ContactSection = () => {
                 </div>
 
                 <div className="pt-4">
-                  <h4 className="font-semibold text-primary mb-3">Follow Us</h4>
-                  <div className="flex space-x-4">
+                  {/* <h4 className="font-semibold text-primary mb-3">Follow Us</h4> */}
+                  {/* <div className="flex space-x-4">
                     <Button variant="outline" size="sm">Facebook</Button>
                     <Button variant="outline" size="sm">Instagram</Button>
                     <Button variant="outline" size="sm">LinkedIn</Button>
-                  </div>
+                  </div> */}
                 </div>
               </CardContent>
             </Card>

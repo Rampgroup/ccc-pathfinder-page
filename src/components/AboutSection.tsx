@@ -30,8 +30,8 @@ const AboutSection = () => {
       <div className="container mx-auto">
         <div className="text-center mb-20">
          <h2 className="font-black mb-6 text-balance">
-  <span className="text-green-600">From Admission</span>{' '}
-  <span className="text-orange-600">to Ambition</span>{' '}
+  <span className="text-blue-600">From Admission</span>{' '}
+  <span className="text-blue-600">to Ambition</span>{' '}
   <span className="text-blue-600">we're with you</span>
 </h2>
 
@@ -63,7 +63,7 @@ const AboutSection = () => {
               </div>
               
               <div className="flex items-start space-x-4 p-4 rounded-2xl border border-border/30">
-                <div className="flex-shrink-0 w-8 h-8 border-2 border-secondary rounded-full flex items-center justify-center text-secondary font-bold">2</div>
+                <div className="flex-shrink-0 w-8 h-8 border-2 border-primary rounded-full flex items-center justify-center text-primary font-bold">2</div>
                 <div>
                   <h4 className="font-bold text-primary mb-2">Master Industry Skills</h4>
                   <p className="text-muted-foreground">Start skill training from Day 1 with our exclusive Trainlance program.</p>
@@ -71,7 +71,7 @@ const AboutSection = () => {
               </div>
               
               <div className="flex items-start space-x-4 p-4 rounded-2xl border border-border/30">
-                <div className="flex-shrink-0 w-8 h-8 border-2 border-accent rounded-full flex items-center justify-center text-accent font-bold">3</div>
+                <div className="flex-shrink-0 w-8 h-8 border-2 border-primary rounded-full flex items-center justify-center text-primary font-bold">3</div>
                 <div>
                   <h4 className="font-bold text-primary mb-2">Secure Job Offers</h4>
                   <p className="text-muted-foreground">Graduate with job offers, not just a degree. 98% placement success rate.</p>
@@ -116,11 +116,11 @@ const AboutSection = () => {
               <div className="text-muted-foreground font-semibold">Students Placed Successfully</div>
             </div>
             <div className="text-center group">
-              <div className="text-4xl md:text-5xl font-black bg-gradient-secondary bg-clip-text text-transparent mb-3 group-hover:scale-110 transition-transform duration-300">500+</div>
+              <div className="text-4xl md:text-5xl font-black bg-gradient-primary bg-clip-text text-transparent mb-3 group-hover:scale-110 transition-transform duration-300">500+</div>
               <div className="text-muted-foreground font-semibold">Top College Partners</div>
             </div>
             <div className="text-center group">
-              <div className="text-4xl md:text-5xl font-black bg-gradient-accent bg-clip-text text-transparent mb-3 group-hover:scale-110 transition-transform duration-300">98%</div>
+              <div className="text-4xl md:text-5xl font-black bg-gradient-primary bg-clip-text text-transparent mb-3 group-hover:scale-110 transition-transform duration-300">98%</div>
               <div className="text-muted-foreground font-semibold">Students Get Job Offers</div>
             </div>
             <div className="text-center group">

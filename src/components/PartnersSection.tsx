@@ -1,5 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 
+
+
 const PartnersSection = () => {
   const partners = [
     { name: "SRM Institute", logo: "src/assets/srm-logo.png", category: "Engineering", location: "Chennai", ranking: "#5 Private Engineering" },
@@ -53,36 +55,48 @@ const PartnersSection = () => {
           <h3 className="text-2xl font-bold text-primary text-center mb-6">Top B.Tech College Partners</h3>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {partners.map((partner, index) => (
-              <Card key={index} className="bg-white border-0 shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 group">
-                <CardContent className="p-6 text-center">
-                  <div className="w-28 h-28 rounded-full flex items-center justify-center mx-auto mb-1 group-hover:scale-110 transition-transform duration-300 overflow-hidden">
-                    <img src={partner.logo} alt={partner.name + ' logo'} className="w-24 h-24 object-contain rounded-full" />
+            {partners.map((partner, index) => {
+              const card = (
+                <Card key={index} className="bg-white border-0 shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 group">
+                  <CardContent className="p-6 text-center">
+                    <div className="w-28 h-28 rounded-full flex items-center justify-center mx-auto mb-1 group-hover:scale-110 transition-transform duration-300 overflow-hidden">
+                      <img src={partner.logo} alt={partner.name + ' logo'} className="w-24 h-24 object-contain rounded-full" />
+                    </div>
+                    <h4 className="font-semibold text-primary text-lg mb-2">{partner.name}</h4>
+                    <p className="text-muted-foreground text-sm mb-1">{partner.location}</p>
+                    <p className="text-primary text-xs font-medium bg-primary/10 rounded-full px-3 py-1 inline-block">
+                      {partner.ranking}
+                    </p>
+                    <div className="mt-3">
+                      <span className="text-xs text-black bg-gray-100 rounded-full px-4 py-1">
+                        {partner.category}
+                      </span>
+                    </div>
+                  </CardContent>
+                </Card>
+              );
+              if (partner.name === "Parul University") {
+                return [
+                  card,
+                  <div key="view-more-btn" className="flex justify-center col-span-1 md:col-span-2 lg:col-span-3">
+                    <button
+                      className="mt-6 px-8 py-2 bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-full font-bold shadow-card flex items-center gap-2 text-lg hover:from-blue-600 hover:to-blue-800 transition-colors duration-200"
+                      style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.12)' }}
+                      onClick={() => window.location.href = '/morecolleges'}
+                    >
+                      View More
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-5 h-5">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </button>
                   </div>
-                  <h4 className="font-semibold text-primary text-lg mb-2">{partner.name}</h4>
-                  <p className="text-muted-foreground text-sm mb-1">{partner.location}</p>
-                  <p className="text-accent text-xs font-medium bg-accent/10 rounded-full px-3 py-1 inline-block">
-                    {partner.ranking}
-                  </p>
-                  <div className="mt-3">
-                    <span className="text-xs text-black bg-gray-100 rounded-full px-4 py-1">
-                      {partner.category}
-                    </span>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+                ];
+              }
+              return card;
+            })}
           </div>
 
-          <div className="text-center mt-8">
-            <p className="text-muted-foreground mb-4">And 500+ more private B.Tech colleges across India</p>
-            <div className="flex justify-center flex-wrap gap-4 text-sm text-primary font-medium">
-              <span className="bg-primary/10 px-3 py-1 rounded-full">• Top Private Universities</span>
-              <span className="bg-primary/10 px-3 py-1 rounded-full">• Deemed Universities</span>
-              <span className="bg-primary/10 px-3 py-1 rounded-full">• Engineering Colleges</span>
-              <span className="bg-primary/10 px-3 py-1 rounded-full">• Technology Institutes</span>
-            </div>
-          </div>
+
         </div>
 
         {/* Partnership Benefits */}

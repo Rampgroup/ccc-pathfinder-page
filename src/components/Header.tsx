@@ -17,7 +17,7 @@ const Header = () => {
   const navLinks = [
     { name: "Home", href: "#home" },
     { name: "About Us", href: "#about" },
-    { name: "Our Services", href: "#services" },
+    // { name: "Our Services", href: "#services" },
     { name: "Top Colleges", href: "#partners" },
     { name: "Skill Training", href: "#trainlance" },
     { name: "Get Support", href: "#contact" },
@@ -29,48 +29,38 @@ const Header = () => {
         ? 'backdrop-blur-md shadow-card border-b border-border/30' 
         : ''
     }`}>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <div className="flex items-center space-x-4 group">
-            <div className="p-3 border-2 border-primary rounded-2xl shadow-card group-hover:shadow-elegant transition-all duration-300 group-hover:scale-105">
-              <GraduationCap className="w-8 h-8 text-primary" />
+      <div className="w-full px-4">
+        <div className="flex items-center h-20">
+          {/* Logo and Navigation in a row */}
+          <div className="flex items-center space-x-8">
+            <div className="flex items-center space-x-4 group">
+              <div className="p-3 border-2 border-primary rounded-2xl shadow-card group-hover:shadow-elegant transition-all duration-300 group-hover:scale-105">
+                <GraduationCap className="w-8 h-8 text-primary" />
+              </div>
+              <div>
+                <h1 className="text-2xl font-black font-poppins gradient-text tracking-tight">Campus Career Club</h1>
+                <p className="text-sm text-muted-foreground font-semibold">Your Journey from College Dreams to Career Goals</p>
+              </div>
             </div>
-            <div>
-              <h1 className="text-2xl font-black font-poppins gradient-text tracking-tight">Campus Career Club</h1>
-              <p className="text-sm text-muted-foreground font-semibold">Your Journey from College Dreams to Career Goals</p>
-            </div>
+            {/* Desktop Navigation */}
+            <nav className="hidden lg:flex items-center gap-10 ml-8">
+              {navLinks.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  className="relative text-foreground hover:text-primary font-medium transition-colors duration-200 group px-2 py-2 flex items-center justify-center"
+                  style={{ minWidth: '110px', textAlign: 'center' }}
+                >
+                  {link.name}
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-primary transition-all duration-300 group-hover:w-full rounded-full"></span>
+                </a>
+              ))}
+            </nav>
           </div>
-
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className="relative text-foreground hover:text-primary font-medium transition-colors duration-200 group py-2"
-              >
-                {link.name}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-primary transition-all duration-300 group-hover:w-full rounded-full"></span>
-              </a>
-            ))}
-          </nav>
-
-          {/* CTA Buttons */}
-          <div className="hidden lg:flex items-center space-x-4">
-            <Button variant="outline" size="sm" className="font-bold">
-              <Phone className="w-4 h-4 mr-2" />
-              Book Free Call
-            </Button>
-            <Button variant="cta" size="sm" className="font-bold">
-              Get Started
-            </Button>
-          </div>
-
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden p-2 rounded-xl hover:bg-muted transition-colors duration-200"
+            className="lg:hidden p-2 rounded-xl hover:bg-muted transition-colors duration-200 ml-auto"
             aria-label="Toggle menu"
           >
             {isMenuOpen ? (

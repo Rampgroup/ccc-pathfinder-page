@@ -14,19 +14,19 @@ const HowItWorksSection = () => {
       icon: Search,
       title: "Choose Your College",
       description: "Browse our curated list of premium private B.Tech colleges and find the perfect match for your profile.",
-      color: "from-purple-500 to-purple-600"
+      color: "from-blue-500 to-blue-600"
     },
     {
       icon: UserPlus,
       title: "Get Admission Support",
       description: "Receive end-to-end admission assistance, from application to enrollment, ensuring a smooth process.",
-      color: "from-green-500 to-green-600"
+      color: "from-blue-500 to-blue-600"
     },
     {
       icon: GraduationCap,
       title: "Start Career Training with Trainlance",
       description: "Begin your skill development journey from first year with programming, soft skills, and aptitude training.",
-      color: "from-orange-500 to-orange-600"
+      color: "from-blue-500 to-blue-600"
     }
   ];
 
@@ -57,15 +57,13 @@ const HowItWorksSection = () => {
                       <div className={`w-16 h-16 bg-gradient-to-br ${step.color} rounded-full flex items-center justify-center mx-auto shadow-lg`}>
                         <IconComponent className="w-8 h-8 text-white" />
                       </div>
-                      <div className="absolute -top-2 -right-2 w-8 h-8 bg-accent rounded-full flex items-center justify-center text-white font-bold text-sm">
+                      <div className="absolute -top-2 -right-2 w-8 h-8 step-number-deepblue rounded-full flex items-center justify-center text-white font-bold text-sm">
                         {index + 1}
                       </div>
                     </div>
-                    
                     <h3 className="text-lg font-semibold text-primary mb-3">
                       {step.title}
                     </h3>
-                    
                     <p className="text-muted-foreground text-sm leading-relaxed">
                       {step.description}
                     </p>
@@ -73,6 +71,11 @@ const HowItWorksSection = () => {
                 </Card>
               );
             })}
+            <style>{`
+              .step-number-deepblue {
+                background-color: #001d3d !important;
+              }
+            `}</style>
           </div>
         </div>
 
@@ -98,7 +101,12 @@ const HowItWorksSection = () => {
               }
             ].map((benefit, index) => (
               <div key={index} className="flex items-start space-x-3">
-                <CheckCircle className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
+                <span className="w-8 h-8 flex items-center justify-center mt-1 rounded-full bg-blue-500 shadow-md">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10" cy="10" r="10" fill="none" />
+                    <path d="M6 10.5L9 13.5L14 8.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </span>
                 <div>
                   <h4 className="font-semibold text-primary mb-1">{benefit.title}</h4>
                   <p className="text-muted-foreground text-sm">{benefit.description}</p>

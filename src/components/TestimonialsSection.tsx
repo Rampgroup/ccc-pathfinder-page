@@ -33,7 +33,7 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section id="testimonials" className="py-20 bg-gradient-hero">
+    <section id="testimonials" className="py-20 bg-primary">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -49,10 +49,10 @@ const TestimonialsSection = () => {
             <Card key={index} className="bg-white/10 backdrop-blur-md border-white/20 hover:bg-white/20 transition-all duration-300 hover:-translate-y-2">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
-                  <Quote className="w-8 h-8 text-accent mr-3" />
+                  <Quote className="w-8 h-8 text-white fill-white mr-3" />
                   <div className="flex">
                     {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 text-accent fill-current" />
+                      <Star key={i} className="w-4 h-4 text-white fill-white" strokeWidth={0} />
                     ))}
                   </div>
                 </div>
@@ -69,8 +69,8 @@ const TestimonialsSection = () => {
                   />
                   <div>
                     <h4 className="font-semibold text-white">{testimonial.name}</h4>
-                    <p className="text-white/80 text-sm">{testimonial.course}</p>
-                    <p className="text-accent text-sm font-medium">{testimonial.college}</p>
+                    <p className="text-white text-sm">{testimonial.course}</p>
+                    <p className="text-white text-sm font-medium">{testimonial.college}</p>
                   </div>
                 </div>
               </CardContent>

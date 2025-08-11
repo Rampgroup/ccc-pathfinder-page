@@ -16,14 +16,14 @@ const TrainlanceSection = () => {
       title: "Soft Skills Development",
       description: "Build communication, leadership, and teamwork skills essential for corporate success.",
       duration: "Continuous",
-      color: "from-green-500 to-green-600"
+      color: "from-blue-500 to-blue-600"
     },
     {
       icon: Brain,
       title: "Aptitude & Logical Reasoning",
       description: "Strengthen analytical thinking and problem-solving abilities for competitive exams and interviews.",
       duration: "Ongoing",
-      color: "from-purple-500 to-purple-600"
+      color: "from-blue-500 to-blue-600"
     }
   ];
 
@@ -40,8 +40,10 @@ const TrainlanceSection = () => {
     <section id="trainlance" className="py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-            CCC × Trainlance Partnership
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 flex items-center justify-center gap-2">
+            CCC
+            <img src="src/assets/tieup.jpg" alt="Partnership" className="inline-block w-10 h-10 mx-2" />
+            Trainlance Partnership
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Beyond college admission, we ensure your success with comprehensive skill training 
@@ -69,7 +71,11 @@ const TrainlanceSection = () => {
             <div className="grid grid-cols-2 gap-4 mb-8">
               {outcomes.map((outcome, index) => (
                 <div key={index} className="flex items-center space-x-2">
-                  <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" />
+                  <span className="w-5 h-5 flex items-center justify-center rounded-full bg-primary">
+                    <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.999 13.2l-3.2-3.2 1.066-1.066L8 11.067l6.134-6.134 1.066 1.067L8 13.2z" fill="white" />
+                    </svg>
+                  </span>
                   <span className="text-sm text-muted-foreground">{outcome}</span>
                 </div>
               ))}
@@ -124,8 +130,8 @@ const TrainlanceSection = () => {
                     <p className="text-muted-foreground mb-4 leading-relaxed">{program.description}</p>
                     
                     <div className="flex items-center justify-between">
-                      <span className="text-accent font-medium">{program.duration}</span>
-                      <Trophy className="w-5 h-5 text-accent" />
+                      <span className="text-primary font-medium">{program.duration}</span>
+                      <Trophy className="w-5 h-5 text-primary" />
                     </div>
                   </CardContent>
                 </Card>
@@ -148,11 +154,11 @@ const TrainlanceSection = () => {
               { year: "Step-4", focus: "Industry Readiness", details: ["Interview preparation,", "real-world projects"] }
             ].map((phase, index) => (
               <div key={index} className="text-center">
-                <div className="w-12 h-12 bg-gradient-to-br from-[#F5F5F5] to-[#E0E0E0] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-black font-bold">{index + 1}</span>
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-white font-bold">{index + 1}</span>
                 </div>
                 <h4 className="font-semibold text-primary mb-2">{phase.year}</h4>
-                <h5 className="font-medium text-accent mb-2">{phase.focus}</h5>
+                <h5 className="font-medium mb-2" style={{ color: '#3a7ca5' }}>{phase.focus}</h5>
                 <p className="text-sm text-muted-foreground">{phase.details}</p>
               </div>
             ))}
