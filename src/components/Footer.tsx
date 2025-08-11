@@ -30,13 +30,13 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              <li><a href="#home" className="text-primary-foreground/80 hover:text-accent transition-colors">Home</a></li>
-              <li><a href="#about" className="text-primary-foreground/80 hover:text-accent transition-colors">About Us</a></li>
-              <li><a href="#services" className="text-primary-foreground/80 hover:text-accent transition-colors">Services</a></li>
-              <li><a href="#testimonials" className="text-primary-foreground/80 hover:text-accent transition-colors">Success Stories</a></li>
-              <li><a href="#partners" className="text-primary-foreground/80 hover:text-accent transition-colors">Partner Colleges</a></li>
-              <li><a href="#trainlance" className="text-primary-foreground/80 hover:text-accent transition-colors">Training (Trainlance)</a></li>
-              <li><a href="#contact" className="text-primary-foreground/80 hover:text-accent transition-colors">Contact Us</a></li>
+              <li><a href="#home" className="text-primary-foreground/80 hover:text-white transition-colors">Home</a></li>
+              <li><a href="#about" className="text-primary-foreground/80 hover:text-white transition-colors">About Us</a></li>
+              <li><a href="#services" className="text-primary-foreground/80 hover:text-white transition-colors">Services</a></li>
+              <li><a href="#testimonials" className="text-primary-foreground/80 hover:text-white transition-colors">Success Stories</a></li>
+              <li><a href="#partners" className="text-primary-foreground/80 hover:text-white transition-colors">Partner Colleges</a></li>
+              <li><a href="#trainlance" className="text-primary-foreground/80 hover:text-white transition-colors">Training (Trainlance)</a></li>
+              <li><a href="#contact" className="text-primary-foreground/80 hover:text-white transition-colors">Contact Us</a></li>
             </ul>
           </div>
 

@@ -7,7 +7,7 @@ import testimonial3 from "@/assets/testimonial-3.jpg";
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      name: "Rahul Sharma",
+      name: "Shree Durga",
       college: "SRM Institute of Science & Technology",
       course: "B.Tech Computer Science",
       image: testimonial1,
@@ -15,7 +15,7 @@ const TestimonialsSection = () => {
       testimonial: "CCC helped me get into SRM University for B.Tech CSE, and Trainlance's programming courses from first year gave me a huge advantage. I secured a software engineering internship in my second year itself!"
     },
     {
-      name: "Priya Patel",
+      name: "Piyanshu Patel",
       college: "Manipal Institute of Technology",
       course: "B.Tech Information Technology",
       image: testimonial2,
@@ -23,7 +23,7 @@ const TestimonialsSection = () => {
       testimonial: "The admission process was so smooth with CCC's support. But what really made the difference was Trainlance's soft skills and aptitude training. I'm now confident in interviews and have already received a pre-placement offer!"
     },
     {
-      name: "Arjun Kumar",
+      name: "Arjuna Kumari",
       college: "VIT Vellore",
       course: "B.Tech Electronics & Communication",
       image: testimonial3,
