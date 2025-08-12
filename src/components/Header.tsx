@@ -34,11 +34,11 @@ const Header = () => {
           {/* Logo and Navigation in a row */}
           <div className="flex items-center space-x-8">
             <div className="flex items-center space-x-4 group">
-              <div className="p-2 bg-white/90 border-2 border-primary rounded-2xl shadow-card group-hover:shadow-elegant transition-all duration-300 group-hover:scale-105">
+              <div className="p-1 bg-white/90 border-2 border-primary rounded-2xl shadow-card group-hover:shadow-elegant transition-all duration-300 group-hover:scale-105">
                 <img 
                   src="/lovable-uploads/c7bcc15e-4423-4211-9f3f-e133243e9e7a.png" 
                   alt="Campus Career Club Logo" 
-                  className="w-12 h-12 object-contain"
+                  className="w-16 h-16 object-contain"
                 />
               </div>
               <div>
