@@ -38,7 +38,7 @@ const Header = () => {
                 <img 
                   src="/lovable-uploads/c7bcc15e-4423-4211-9f3f-e133243e9e7a.png" 
                   alt="Campus Career Club Logo" 
-                  className="w-15 h-15 object-contain"
+                  className="w-16 h-16 object-contain"
                 />
               </div>
               <div>
