@@ -1,15 +1,7 @@
 
-import React, { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { toast } from "sonner";
+import React from "react";
 
-interface College {
-  name: string;
-  logo: string;
-  generatedImage?: string;
-}
-
-const moreColleges: College[] = [
+const moreColleges = [
   { name: "Bennett University", logo: "src/assets/bennett-logo.png" },
   { name: "Shiv Nadar University", logo: "src/assets/shivnadar-logo.png" },
   { name: "Chandigarh University", logo: "src/assets/chandigarh-logo.png" },
@@ -66,103 +58,20 @@ const moreColleges: College[] = [
 ];
 
 const MoreColleges: React.FC = () => {
-  const [colleges, setColleges] = useState<College[]>(moreColleges);
-  const [generatingIndex, setGeneratingIndex] = useState<number | null>(null);
-
-  const generateCollegeImage = async (college: College, index: number) => {
-    setGeneratingIndex(index);
-    try {
-      const response = await fetch('/api/generate-college-images', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ collegeName: college.name }),
-      });
-
-      const data = await response.json();
-      
-      if (data.success && data.imageURL) {
-        const updatedColleges = [...colleges];
-        updatedColleges[index].generatedImage = data.imageURL;
-        setColleges(updatedColleges);
-        toast.success(`Generated image for ${college.name}!`);
-      } else {
-        throw new Error(data.error || 'Failed to generate image');
-      }
-    } catch (error) {
-      console.error('Error generating image:', error);
-      toast.error(`Failed to generate image for ${college.name}`);
-    } finally {
-      setGeneratingIndex(null);
-    }
-  };
-
-  const generateAllImages = async () => {
-    toast.info("Starting to generate images for all colleges...");
-    
-    for (let i = 0; i < colleges.length; i++) {
-      if (!colleges[i].generatedImage) {
-        await generateCollegeImage(colleges[i], i);
-        // Add a small delay between requests to avoid overwhelming the API
-        await new Promise(resolve => setTimeout(resolve, 1000));
-      }
-    }
-    
-    toast.success("Finished generating all college images!");
-  };
-
   return (
     <section className="py-20 bg-background min-h-screen">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-6">More College Partners</h2>
-        
-        <div className="text-center mb-8">
-          <Button 
-            onClick={generateAllImages}
-            className="bg-gradient-primary text-white px-6 py-3 rounded-full font-semibold hover:shadow-elegant transition-all duration-300"
-            disabled={generatingIndex !== null}
-          >
-            {generatingIndex !== null ? 'Generating Images...' : 'Generate All College Images'}
-          </Button>
-          <p className="text-sm text-muted-foreground mt-2">
-            Click individual colleges or generate all at once using AI
-          </p>
-        </div>
-
+        <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-10">More College Partners</h2>
         <div className="grid grid-cols-3 gap-8">
-          {colleges.map((college, idx) => (
-            <div 
-              key={idx} 
-              className="bg-white rounded-2xl shadow-card p-6 flex flex-col items-center justify-center hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 cursor-pointer"
-              onClick={() => !college.generatedImage && generatingIndex === null && generateCollegeImage(college, idx)}
-            >
-              <div className="w-24 h-24 rounded-full overflow-hidden flex items-center justify-center mb-4 bg-gray-100 relative">
-                {generatingIndex === idx ? (
-                  <div className="flex items-center justify-center">
-                    <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
-                  </div>
-                ) : (
-                  <img 
-                    src={college.generatedImage || college.logo} 
-                    alt={college.name + ' logo'} 
-                    className="w-20 h-20 object-contain" 
-                  />
-                )}
-                {!college.generatedImage && generatingIndex !== idx && (
-                  <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 rounded-full flex items-center justify-center transition-all duration-200">
-                    <span className="text-xs text-white opacity-0 hover:opacity-100 font-medium">Generate AI Image</span>
-                  </div>
-                )}
+          {moreColleges.map((college, idx) => (
+            <div key={idx} className="bg-white rounded-2xl shadow-card p-6 flex flex-col items-center justify-center hover:shadow-elegant transition-all duration-300 hover:-translate-y-2">
+              <div className="w-24 h-24 rounded-full overflow-hidden flex items-center justify-center mb-4 bg-gray-100">
+                <img src={college.logo} alt={college.name + ' logo'} className="w-20 h-20 object-contain" />
               </div>
               <h3 className="font-semibold text-primary text-lg text-center">{college.name}</h3>
-              {college.generatedImage && (
-                <span className="text-xs text-accent mt-1">✨ AI Generated</span>
-              )}
             </div>
           ))}
         </div>
-        
         <div className="text-center mt-12">
           <a href="/" className="inline-block px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-full font-bold shadow-card text-lg hover:from-blue-600 hover:to-blue-800 transition-colors duration-200">
             Back to Home
