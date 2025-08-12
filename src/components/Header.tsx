@@ -35,7 +35,11 @@ const Header = () => {
           <div className="flex items-center space-x-8">
             <div className="flex items-center space-x-4 group">
               <div className="p-3 border-2 border-primary rounded-2xl shadow-card group-hover:shadow-elegant transition-all duration-300 group-hover:scale-105">
-                <GraduationCap className="w-8 h-8 text-primary" />
+                <img 
+                  src="/lovable-uploads/c7bcc15e-4423-4211-9f3f-e133243e9e7a.png" 
+                  alt="Campus Career Club Logo" 
+                  className="w-8 h-8"
+                />
               </div>
               <div>
                 <h1 className="text-2xl font-black font-poppins gradient-text tracking-tight">Campus Career Club</h1>
