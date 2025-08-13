@@ -1,6 +1,6 @@
 import { ArrowRight, Play, Star, Users, Award, TrendingUp, GraduationCap, Briefcase, Headphones } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroStudents from "@/assets/hero-students.jpg";
+const heroStudents = "/hero-students.jpg";
 
 const HeroSection = () => {
   return (

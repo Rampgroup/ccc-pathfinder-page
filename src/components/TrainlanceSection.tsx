@@ -42,7 +42,7 @@ const TrainlanceSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 flex items-center justify-center gap-2">
             CCC
-            <img src="src/assets/tieup.jpg" alt="Partnership" className="inline-block w-10 h-10 mx-2" />
+            <img src="/tieup.jpg" alt="Partnership" className="inline-block w-10 h-10 mx-2" />
             Trainlance Partnership
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">

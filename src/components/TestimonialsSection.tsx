@@ -1,8 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, Quote } from "lucide-react";
-import testimonial1 from "@/assets/testimonial-1.jpg";
-import testimonial2 from "@/assets/testimonial-2.jpg";
-import testimonial3 from "@/assets/testimonial-3.jpg";
+const testimonial1 = "/testimonial-1.jpg";
+const testimonial2 = "/testimonial-2.jpg";
+const testimonial3 = "/testimonial-3.jpg";
 
 const TestimonialsSection = () => {
   const testimonials = [
