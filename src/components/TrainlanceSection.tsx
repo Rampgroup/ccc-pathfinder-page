@@ -143,7 +143,7 @@ const TrainlanceSection = () => {
         {/* Training Timeline */}
         <div className="bg-gradient-subtle rounded-2xl p-8">
           <h3 className="text-2xl font-bold text-primary text-center mb-8 bg-[#E3F2FD] text-primary rounded-lg py-3">
-            4-Year Training Journey
+            Your Training Journey
           </h3>
           
           <div className="grid md:grid-cols-4 gap-6">

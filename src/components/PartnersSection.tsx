@@ -20,46 +20,34 @@ const PartnersSection = () => {
   ];
 
   const moreColleges = [
-    { name: "Bennett University", logo: "/bennett-logo.png", category: "Engineering", location: "Greater Noida", ranking: "#50 Private Engineering" },
-    { name: "Shiv Nadar University", logo: "/shivnadar-logo.png", category: "Engineering", location: "Greater Noida", ranking: "#55 Private Engineering" },
-    { name: "Chandigarh University", logo: "/chandigarh-logo.png", category: "Engineering", location: "Chandigarh", ranking: "#60 Private Engineering" },
-    { name: "BITS Pilani", logo: "/bits-logo.png", category: "Engineering", location: "Pilani", ranking: "#3 Private Engineering" },
-    { name: "Jain University", logo: "/jain-logo.png", category: "Engineering", location: "Bangalore", ranking: "#65 Private Engineering" },
-    { name: "Graphic Era University", logo: "/graphicera-logo.png", category: "Engineering", location: "Dehradun", ranking: "#70 Private Engineering" },
-    { name: "Presidency University", logo: "/presidency-logo.png", category: "Engineering", location: "Bangalore", ranking: "#75 Private Engineering" },
-    { name: "REVA University", logo: "/reva-logo.png", category: "Engineering", location: "Bangalore", ranking: "#80 Private Engineering" },
-    { name: "Galgotias University", logo: "/galgotias-logo.png", category: "Engineering", location: "Greater Noida", ranking: "#85 Private Engineering" },
-    { name: "Sharda University", logo: "/sharda-logo.png", category: "Engineering", location: "Greater Noida", ranking: "#90 Private Engineering" },
-    { name: "SRM AP", logo: "/srmap-logo.png", category: "Engineering", location: "Amaravati", ranking: "#95 Private Engineering" },
-    { name: "Vignan University", logo: "/vignan-logo.png", category: "Engineering", location: "Guntur", ranking: "#100 Private Engineering" },
-    { name: "Lovely Professional University", logo: "/lpu2-logo.png", category: "Engineering", location: "Punjab", ranking: "#25 Private Engineering" },
-    { name: "Chitkara University", logo: "/chitkara-logo.png", category: "Engineering", location: "Punjab", ranking: "#105 Private Engineering" },
-    { name: "Thapar Institute", logo: "/thapar-logo.png", category: "Engineering", location: "Patiala", ranking: "#110 Private Engineering" },
-    { name: "Jaypee University", logo: "/jaypee-logo.png", category: "Engineering", location: "Noida", ranking: "#115 Private Engineering" },
-    { name: "Nirma University", logo: "/nirma-logo.png", category: "Engineering", location: "Ahmedabad", ranking: "#120 Private Engineering" },
-    { name: "Christ University", logo: "/christ-logo.png", category: "Engineering", location: "Bangalore", ranking: "#125 Private Engineering" },
+    { name: "Bennett University", logo: "/bennet-university.png", category: "Engineering", location: "Greater Noida", ranking: "#50 Private Engineering" },
+    { name: "Guru Nanak College", logo: "/gurunanak.png", category: "Engineering", location: "Hyderabad", ranking: "#55 Private Engineering" },
+    { name: "Chandigarh University", logo: "/chandigarh university.jpg", category: "Engineering", location: "Chandigarh", ranking: "#60 Private Engineering" },
+    { name: "Sandip University", logo: "/sandip university.png", category: "Engineering", location: "Nasik", ranking: "#89 Private Engineering" },
+    { name: "Vignan's Foundation for Science, Technology & Research", logo: "/vignan-logo.jpg", category: "Engineering", location: "Guntur", ranking: "#65 Private Engineering" },
+    { name: "R.V.R. & J.C.College of Engineering", logo: "/rvrjc.jpg", category: "Engineering", location: "Guntur", ranking: "#70 Private Engineering" },
+    { name: "Presidency University", logo: "/presidency.jpg", category: "Engineering", location: "Bangalore", ranking: "#75 Private Engineering" },
+    { name: "REVA University", logo: "/Reva_logo.jpeg", category: "Engineering", location: "Bangalore", ranking: "#80 Private Engineering" },
+    { name: "Dhanekula Institute of Engineering & Technology", logo: "/dhanekula.png", category: "Engineering", location: "Vijayawada", ranking: "#85 Private Engineering" },
+    { name: "Sharda University", logo: "/sharada.png", category: "Engineering", location: "Greater Noida", ranking: "#90 Private Engineering" },
+    { name: "Vishnu Institute of Technology", logo: "/vishnu.png", category: "Engineering", location: "Bhimavaram", ranking: "#95 Private Engineering" },
+    { name: "Acharya Nagarjuna University (ANU)", logo: "/acharya.png", category: "Engineering", location: "Guntur", ranking: "#100 Private Engineering" },
+    { name: "MLR Institute of Technology", logo: "/mlr.jpg", category: "Engineering", location: "Hyderabad", ranking: "#25 Private Engineering" },
+    { name: "Anna University", logo: "/anna-logo.png", category: "Engineering", location: "Chennai", ranking: "#105 Private Engineering" },
+    { name: "Kalasalingam Academy of Research and Education", logo: "/kalasalingam-logo.png", category: "Engineering", location: "Chennai", ranking: "#110 Private Engineering" },
+    { name: "SASTRA Deemed University", logo: "/sastra.png", category: "Engineering", location: "Thanjavur", ranking: "#115 Private Engineering" },
+    { name: "Sathyabama Institute of Science and Technology, Chennai", logo: "/sathyabama.png", category: "Engineering", location: "Chennai", ranking: "#120 Private Engineering" },
+    { name: "Visvesvaraya Technological University", logo: "/viswa.png", category: "Engineering", location: "Bangalore", ranking: "#125 Private Engineering" },
     { name: "Symbiosis University", logo: "/symbiosis-logo.png", category: "Engineering", location: "Pune", ranking: "#130 Private Engineering" },
-    { name: "MIT World Peace University", logo: "/mitwpu-logo.png", category: "Engineering", location: "Pune", ranking: "#135 Private Engineering" },
-    { name: "Flame University", logo: "/flame-logo.png", category: "Engineering", location: "Pune", ranking: "#140 Private Engineering" },
-    { name: "O.P. Jindal University", logo: "/jindal-logo.png", category: "Engineering", location: "Sonipat", ranking: "#145 Private Engineering" },
+    { name: "Ramaiah Institute of Technology", logo: "/ramaih.png", category: "Engineering", location: "Pune", ranking: "#135 Private Engineering" },
+    { name: "Flame University", logo: "/flame.jpg", category: "Engineering", location: "Pune", ranking: "#140 Private Engineering" },
+    { name: "CMR Institute of Technology", logo: "/cmr.jpg", category: "Engineering", location: "Sonipat", ranking: "#145 Private Engineering" },
     { name: "Ashoka University", logo: "/ashoka-logo.png", category: "Engineering", location: "Sonipat", ranking: "#150 Private Engineering" },
     { name: "JSS Academy", logo: "/jss-logo.png", category: "Engineering", location: "Noida", ranking: "#155 Private Engineering" },
-    { name: "PES University", logo: "/pes-logo.png", category: "Engineering", location: "Bangalore", ranking: "#160 Private Engineering" },
-    { name: "BMS College", logo: "/bms-logo.png", category: "Engineering", location: "Bangalore", ranking: "#165 Private Engineering" },
-    { name: "RV College", logo: "/rv-logo.png", category: "Engineering", location: "Bangalore", ranking: "#170 Private Engineering" },
-    { name: "Dayananda Sagar University", logo: "/dsu-logo.png", category: "Engineering", location: "Bangalore", ranking: "#175 Private Engineering" },
-    { name: "CMR University", logo: "/cmr-logo.png", category: "Engineering", location: "Bangalore", ranking: "#180 Private Engineering" },
-    { name: "Alliance University", logo: "/alliance-logo.png", category: "Engineering", location: "Bangalore", ranking: "#185 Private Engineering" },
-    { name: "IIIT Hyderabad", logo: "/iiith-logo.png", category: "Engineering", location: "Hyderabad", ranking: "#2 Private Engineering" },
-    { name: "IIIT Bangalore", logo: "/iiitb-logo.png", category: "Engineering", location: "Bangalore", ranking: "#4 Private Engineering" },
-    { name: "NIT Warangal", logo: "/nitw-logo.png", category: "Engineering", location: "Warangal", ranking: "#1 Government Engineering" },
-    { name: "NIT Trichy", logo: "/nitt-logo.png", category: "Engineering", location: "Trichy", ranking: "#2 Government Engineering" },
-    { name: "NIT Surathkal", logo: "/nitk-logo.png", category: "Engineering", location: "Surathkal", ranking: "#3 Government Engineering" },
-    { name: "VIT Bhopal", logo: "/vitb-logo.png", category: "Engineering", location: "Bhopal", ranking: "#190 Private Engineering" },
-    { name: "VIT AP", logo: "/vitap-logo.png", category: "Engineering", location: "Amaravati", ranking: "#195 Private Engineering" },
-    { name: "Kalinga University", logo: "/kalinga-logo.png", category: "Engineering", location: "Bhubaneswar", ranking: "#200 Private Engineering" },
-    { name: "Siksha O Anusandhan", logo: "/soa-logo.png", category: "Engineering", location: "Bhubaneswar", ranking: "#205 Private Engineering" },
-    { name: "KIIT University", logo: "/kiit2-logo.png", category: "Engineering", location: "Bhubaneswar", ranking: "#210 Private Engineering" }
+    { name: "PES University", logo: "/pes.png", category: "Engineering", location: "Bangalore", ranking: "#160 Private Engineering" },
+    { name: "BMS College", logo: "/bms.png", category: "Engineering", location: "Bangalore", ranking: "#165 Private Engineering" },
+    { name: "RV College", logo: "/rv.jpg", category: "Engineering", location: "Bangalore", ranking: "#170 Private Engineering" },
+   
   ];
 
   const allColleges = [...partners, ...moreColleges];
@@ -96,10 +84,10 @@ const PartnersSection = () => {
         </div>
 
         {/* Partner Logos/Names */}
-        <div className="bg-gradient-subtle rounded-2xl p-8 mb-4">
+  <div className="bg-gradient-subtle rounded-2xl p-8 mb-4 overflow-x-hidden">
           <h3 className="text-2xl font-bold text-primary text-center mb-6">Top B.Tech College Partners</h3>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-full overflow-x-hidden">
             {displayedColleges.map((college, index) => (
               <Card key={index} className="bg-white border-0 shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 group">
                 <CardContent className="p-6 text-center">
@@ -119,6 +107,14 @@ const PartnersSection = () => {
                 </CardContent>
               </Card>
             ))}
+
+          {showAllColleges && (
+            <div className="flex justify-center mt-6">
+              <span className="text-lg font-semibold text-primary whitespace-nowrap text-center">
+                ...and many more universities and colleges
+              </span>
+            </div>
+          )}
           </div>
 
           {/* View More/Less Button */}
@@ -126,7 +122,16 @@ const PartnersSection = () => {
             <button
               className="px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-full font-bold shadow-card flex items-center gap-2 text-lg hover:from-blue-600 hover:to-blue-800 transition-colors duration-200"
               style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.12)' }}
-              onClick={() => setShowAllColleges(!showAllColleges)}
+              onClick={() => {
+                if (showAllColleges) {
+                  // Scroll to the Top B.Tech College Partners heading
+                  const heading = document.querySelector('h3.text-2xl.font-bold.text-primary.text-center.mb-6');
+                  if (heading) {
+                    heading.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  }
+                }
+                setShowAllColleges(!showAllColleges);
+              }}
             >
               {showAllColleges ? 'View Less' : 'View More'}
               <svg 

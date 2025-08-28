@@ -4,20 +4,21 @@ const heroStudents = "/hero-students.jpg";
 
 const HeroSection = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 bg-gradient-to-b from-background to-background/90">
+  <section id="home" className="relative min-h-screen flex items-center justify-center overflow-x-hidden overflow-y-hidden pt-24 bg-gradient-to-b from-background to-background/90">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src={heroStudents} 
+        <img
+          src={heroStudents}
           alt="Students achieving success in their academic journey"
-          className="w-full h-full object-cover opacity-25"
+          className="w-full h-full object-cover opacity-25 max-h-[60vh] sm:max-h-[70vh] md:max-h-none md:h-full md:w-full"
+          style={{ objectPosition: 'center bottom' }}
         />
       </div>
 
 
 
       {/* Main Content */}
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
+  <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 max-w-full overflow-x-hidden">
         <div className="text-center max-w-5xl mx-auto">
           {/* Main Headline */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-black font-poppins text-foreground mb-6 leading-tight text-balance">

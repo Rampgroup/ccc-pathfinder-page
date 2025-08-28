@@ -29,7 +29,7 @@ const CollegePartnerCTA = () => {
             Want More Quality Admissions?
           </h2>
           <p className="text-xl text-white/90 max-w-3xl mx-auto mb-8">
-            Partner with Campus Career Club to connect with thousands of motivated 12th-passed 
+            Partner with Campus Career Connect to connect with thousands of motivated 12th-passed 
             students seeking quality B.Tech education. Join our network of premium colleges 
             and experience increased enrollment with qualified candidates.
           </p>

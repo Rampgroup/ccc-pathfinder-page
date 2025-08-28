@@ -58,17 +58,36 @@ const ScheduleCall = () => {
     }
   };
 
-  const onSubmit = (data: FormData) => {
-    console.log("Form submitted:", data);
-    toast({
-      title: "Form Submitted Successfully",
-      description: "Our career expert will contact you soon!",
-    });
-    
-    // Navigate back to home page after submission
-    setTimeout(() => {
-      navigate("/");
-    }, 2000);
+  const onSubmit = async (data: FormData) => {
+    try {
+      const payload = {
+        formType: "expertForm",
+        name: data.name,
+        phoneNumber: data.mobile,
+        collegeName: data.qualification,
+        nativeVillage: data.state,
+        receiveUpdates: data.receiveUpdates,
+      };
+      const res = await fetch("https://f04or36zm8.execute-api.ca-central-1.amazonaws.com/career/careerContacts", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      });
+      if (!res.ok) throw new Error("Failed to submit. Please try again.");
+      toast({
+        title: "Form Submitted Successfully",
+        description: "Our career expert will contact you soon!",
+      });
+      setTimeout(() => {
+        navigate("/");
+      }, 2000);
+    } catch (err) {
+      toast({
+        title: "Submission Failed",
+        description: err.message || "Something went wrong.",
+        variant: "destructive",
+      });
+    }
   };
 
   return (

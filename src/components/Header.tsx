@@ -23,6 +23,20 @@ const Header = () => {
     { name: "Get Support", href: "#contact" },
   ];
 
+  const whyUsTab = { name: "Why Us?", href: "#whyus", isWhyUs: true };
+
+  // Remove showWhyUs state, not needed for hover
+  const whyUsPoints = [
+    "Free Career Guidance after 12th by experts",
+    "Free Campus Visits to shortlisted colleges",
+    "Trainlance Tie-up for guaranteed placement training",
+    "Top B Tech College Admissions with full support",
+    "Personalized College Selection based on goals & budget",
+    "Internships & Industry Exposure during your course",
+    "Dedicated Mentorship from admission to job offer",
+    "Educational Loan Assistance through Credella",
+  ];
+
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled 
@@ -30,36 +44,51 @@ const Header = () => {
         : ''
     }`}>
       <div className="w-full px-4">
-        <div className="flex items-center h-20">
-          {/* Logo and Navigation in a row */}
-          <div className="flex items-center space-x-8">
-            <div className="flex items-center space-x-4 group">
-              <div className="p-1 bg-white/90 border-2 border-primary rounded-2xl shadow-card group-hover:shadow-elegant transition-all duration-300 group-hover:scale-105">
-                <img 
-                  src="/lovable-uploads/c7bcc15e-4423-4211-9f3f-e133243e9e7a.png" 
-                  alt="Campus Career Club Logo" 
-                  className="w-16 h-16 object-contain"
-                />
-              </div>
-              <div>
-                <h1 className="text-2xl font-black font-poppins gradient-text tracking-tight">Campus Career Club</h1>
-                <p className="text-sm text-muted-foreground font-semibold">Your Journey from College Dreams to Career Goals</p>
-              </div>
+        <div className="flex items-center h-20 w-full">
+          {/* Logo and Title */}
+          <div className="flex items-center space-x-4 group">
+            <div className="p-1 bg-white/90 border-2 border-primary rounded-2xl shadow-card group-hover:shadow-elegant transition-all duration-300 group-hover:scale-105">
+              <img 
+                src="/ccc-logo.jpeg"
+                alt="Campus Career Club Logo" 
+                className="w-16 h-16 object-contain"
+              />
             </div>
-            {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center gap-10 ml-8">
-              {navLinks.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  className="relative text-foreground hover:text-primary font-medium transition-colors duration-200 group px-2 py-2 flex items-center justify-center"
-                  style={{ minWidth: '110px', textAlign: 'center' }}
-                >
-                  {link.name}
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-primary transition-all duration-300 group-hover:w-full rounded-full"></span>
-                </a>
-              ))}
-            </nav>
+            <div className="flex flex-col justify-center">
+              <h1 className="text-2xl font-black font-poppins gradient-text tracking-tight leading-tight">Campus Career Connect</h1>
+              <p className="text-sm text-muted-foreground font-semibold leading-tight">Your Journey from College Dreams to Career Goals</p>
+            </div>
+          </div>
+          {/* Main nav links left-aligned after logo */}
+          <nav className="hidden lg:flex items-center gap-10 ml-8 flex-1">
+            {navLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                className="relative text-foreground hover:text-primary font-medium transition-colors duration-200 group px-2 py-2 flex items-center justify-center"
+                style={{ minWidth: '110px', textAlign: 'center' }}
+              >
+                {link.name}
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-primary transition-all duration-300 group-hover:w-full rounded-full"></span>
+              </a>
+            ))}
+          </nav>
+          {/* Why Us? tab at the far right */}
+          <div className="hidden lg:block relative group">
+            <div
+              className="relative bg-primary text-white font-bold transition-colors duration-200 group px-4 py-2 flex items-center justify-center cursor-pointer rounded-lg shadow hover:bg-primary/90"
+              style={{ minWidth: '110px', textAlign: 'center' }}
+            >
+              {whyUsTab.name}
+            </div>
+            <div className="absolute right-0 mt-2 w-80 bg-white border border-border rounded-xl shadow-lg z-50 p-4 text-left animate-fade-in opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200">
+              <h3 className="font-bold text-lg mb-2 text-primary">Why Choose Us?</h3>
+              <ul className="list-disc pl-5 space-y-2 text-sm text-foreground">
+                {whyUsPoints.map((point, idx) => (
+                  <li key={idx}>{point}</li>
+                ))}
+              </ul>
+            </div>
           </div>
           {/* Mobile Menu Button */}
           <button
@@ -94,6 +123,23 @@ const Header = () => {
                 {link.name}
               </a>
             ))}
+            {/* Why Us? tab at the right end in mobile menu */}
+            <div className="relative">
+              <div
+                className="bg-primary text-white font-bold transition-colors duration-200 py-2 px-4 rounded-lg shadow w-full text-left cursor-pointer hover:bg-primary/90"
+                tabIndex={isMenuOpen ? 0 : -1}
+              >
+                {whyUsTab.name}
+              </div>
+              <div className="mt-2 w-full bg-white border border-border rounded-xl shadow-lg z-50 p-4 text-left animate-fade-in">
+                <h3 className="font-bold text-lg mb-2 text-primary">Why Choose Us?</h3>
+                <ul className="list-disc pl-5 space-y-2 text-sm text-foreground">
+                  {whyUsPoints.map((point, idx) => (
+                    <li key={idx}>{point}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
             <div className="flex flex-col space-y-3 pt-4">
               <Button variant="outline" size="sm" className="w-full font-bold">
                 <Phone className="w-4 h-4 mr-2" />

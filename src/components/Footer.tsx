@@ -2,9 +2,9 @@ import { GraduationCap, Mail, Phone, MapPin } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#232F3E] text-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <footer className="bg-[#232F3E] text-white overflow-x-hidden">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 max-w-full overflow-x-hidden">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-full overflow-x-hidden">
           {/* Brand Section */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
@@ -12,7 +12,7 @@ const Footer = () => {
                 <GraduationCap className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-bold">Campus Career Club</h3>
+                <h3 className="text-xl font-bold">Campus Career Connect</h3>
                 <p className="text-sm text-primary-foreground/80">Empowering Student Success</p>
               </div>
             </div>
@@ -61,17 +61,17 @@ const Footer = () => {
               <div className="flex items-start space-x-2">
                 <MapPin className="w-4 h-4 text-white mt-1 flex-shrink-0" />
                 <span className="text-primary-foreground/80 text-sm">
-                  CCC Campus, Block A, Sector 62<br />
-                  Noida, Uttar Pradesh 201309
+                  CCC Campus, Malakpet, Hyderabad <br />
+
                 </span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 text-white" />
-                <span className="text-primary-foreground/80 text-sm">+91 98765 43210</span>
+                <span className="text-primary-foreground/80 text-sm">+91 8074313417</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 text-white" />
-                <span className="text-primary-foreground/80 text-sm">info@campuscareerclub.com</span>
+                <span className="text-primary-foreground/80 text-sm">info@campuscareerconnect.com</span>
               </div>
             </div>
             

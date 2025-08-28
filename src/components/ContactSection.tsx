@@ -6,9 +6,80 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 const ContactSection = () => {
+
   const navigate = useNavigate();
+  // Contact form state
+  const [form, setForm] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phoneNumber: "",
+    currentStatus: "",
+    areaOfInterest: "",
+    message: "",
+    consent: false
+  });
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState("");
+  const [error, setError] = useState("");
+
+  // Handle input changes
+  const handleChange = (e) => {
+    const { id, value, type, checked } = e.target;
+    setForm((prev) => ({
+      ...prev,
+      [id]: type === "checkbox" ? checked : value
+    }));
+  };
+
+  // Handle select changes
+  const handleSelect = (field, value) => {
+    setForm((prev) => ({ ...prev, [field]: value }));
+  };
+
+  // Handle form submit
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setSuccess("");
+    setError("");
+    try {
+      const payload = {
+        formType: "contactForm",
+        firstName: form.firstName,
+        lastName: form.lastName,
+        email: form.email,
+        phoneNumber: form.phoneNumber,
+        currentStatus: form.currentStatus,
+        areaOfInterest: form.areaOfInterest,
+        message: form.message
+      };
+      const res = await fetch("https://f04or36zm8.execute-api.ca-central-1.amazonaws.com/career/careerContacts", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      });
+      if (!res.ok) throw new Error("Failed to submit. Please try again.");
+      setSuccess("Thank you! Your message has been sent.");
+      setForm({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phoneNumber: "",
+        currentStatus: "",
+        areaOfInterest: "",
+        message: "",
+        consent: false
+      });
+    } catch (err) {
+      setError(err.message || "Something went wrong.");
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <section id="contact" className="py-20 bg-gradient-subtle">
@@ -36,9 +107,8 @@ const ContactSection = () => {
                   <div>
                     <h4 className="font-semibold text-primary mb-1">Address</h4>
                     <p className="text-muted-foreground text-sm">
-                      CCC Campus, Block A, Sector 62<br />
-                      Noida, Uttar Pradesh 201309
-                    </p>
+                      CCC Campus, Malakpet, Hyderabad<br />
+                 </p>
                   </div>
                 </div>
                 
@@ -46,8 +116,8 @@ const ContactSection = () => {
                   <Phone className="w-5 h-5 text-blue mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold text-primary mb-1">Phone</h4>
-                    <p className="text-muted-foreground text-sm">+91 98765 43210</p>
-                    <p className="text-muted-foreground text-sm">+91 87654 32109</p>
+                    <p className="text-muted-foreground text-sm">+91 8074313417</p>
+                    <p className="text-muted-foreground text-sm">+91 9390163762</p>
                   </div>
                 </div>
                 
@@ -89,33 +159,33 @@ const ContactSection = () => {
                 <CardTitle className="text-secondary">Send us a Message</CardTitle>
               </CardHeader>
               <CardContent>
-                <form className="space-y-6">
+                <form className="space-y-6" onSubmit={handleSubmit}>
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
                       <Label htmlFor="firstName">First Name *</Label>
-                      <Input id="firstName" placeholder="Enter your first name" className="mt-1" />
+                      <Input id="firstName" placeholder="Enter your first name" className="mt-1" value={form.firstName} onChange={handleChange} required />
                     </div>
                     <div>
                       <Label htmlFor="lastName">Last Name *</Label>
-                      <Input id="lastName" placeholder="Enter your last name" className="mt-1" />
+                      <Input id="lastName" placeholder="Enter your last name" className="mt-1" value={form.lastName} onChange={handleChange} required />
                     </div>
                   </div>
                   
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
                       <Label htmlFor="email">Email *</Label>
-                      <Input id="email" type="email" placeholder="Enter your email" className="mt-1" />
+                      <Input id="email" type="email" placeholder="Enter your email" className="mt-1" value={form.email} onChange={handleChange} required />
                     </div>
                     <div>
                       <Label htmlFor="phone">Phone Number *</Label>
-                      <Input id="phone" type="tel" placeholder="Enter your phone number" className="mt-1" />
+                      <Input id="phoneNumber" type="tel" placeholder="Enter your phone number" className="mt-1" value={form.phoneNumber} onChange={handleChange} required />
                     </div>
                   </div>
 
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
                       <Label htmlFor="grade">Current Status *</Label>
-                      <Select>
+                      <Select value={form.currentStatus} onValueChange={(val) => handleSelect("currentStatus", val)}>
                         <SelectTrigger className="mt-1">
                           <SelectValue placeholder="Select your current status" />
                         </SelectTrigger>
@@ -129,7 +199,7 @@ const ContactSection = () => {
                     </div>
                     <div>
                       <Label htmlFor="interest">Area of Interest *</Label>
-                      <Select>
+                      <Select value={form.areaOfInterest} onValueChange={(val) => handleSelect("areaOfInterest", val)}>
                         <SelectTrigger className="mt-1">
                           <SelectValue placeholder="Select your interest" />
                         </SelectTrigger>
@@ -153,20 +223,25 @@ const ContactSection = () => {
                       placeholder="Tell us about your career goals, questions, or how we can help you..."
                       className="mt-1"
                       rows={5}
+                      value={form.message}
+                      onChange={handleChange}
+                      required
                     />
                   </div>
 
                   <div className="flex items-center space-x-2">
-                    <input type="checkbox" id="consent" className="rounded" />
+                    <input type="checkbox" id="consent" className="rounded" checked={form.consent} onChange={handleChange} />
                     <Label htmlFor="consent" className="text-sm text-muted-foreground">
                       I agree to receive communications from Campus Career Club and understand that I can unsubscribe at any time.
                     </Label>
                   </div>
 
                   <div className="flex gap-4">
-                    <Button type="submit" variant="cta" size="lg" className="flex-1">
-                      Send Message
+                    <Button type="submit" variant="cta" size="lg" className="flex-1" disabled={loading}>
+                      {loading ? "Sending..." : "Send Message"}
                     </Button>
+                  {success && <div className="text-green-600 text-center font-medium">{success}</div>}
+                  {error && <div className="text-red-600 text-center font-medium">{error}</div>}
                     <Button 
                       type="button" 
                       variant="outline" 
