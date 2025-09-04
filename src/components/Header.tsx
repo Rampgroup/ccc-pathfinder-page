@@ -50,7 +50,7 @@ const Header = () => {
             <div className="p-1 bg-white/90 border-2 border-primary rounded-2xl shadow-card group-hover:shadow-elegant transition-all duration-300 group-hover:scale-105">
               <img 
                 src="/ccc-logo.jpeg"
-                alt="Campus Career Club Logo" 
+                alt="Campus Career Club connect" 
                 className="w-16 h-16 object-contain"
               />
             </div>

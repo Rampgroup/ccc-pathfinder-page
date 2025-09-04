@@ -9,7 +9,7 @@ const PrivacyPolicy = () => {
       <header className="bg-primary text-primary-foreground p-6">
         <div className="container mx-auto">
           <Link to="/">
-            <Button variant="ghost" className="text-primary-foreground mb-4">
+            <Button variant="ghost" className="text-primary-foreground mb-4 hover:underline hover:text-primary-foreground/90">
               <ArrowLeft className="h-4 w-4 mr-2" />
               Back to Home
             </Button>
@@ -155,9 +155,9 @@ const PrivacyPolicy = () => {
                 Questions about your privacy or this policy? We're here to help:
               </p>
               <ul className="space-y-1">
-                <li><strong>Email:</strong> privacy@campuscareerclub.com</li>
-                <li><strong>Phone:</strong> +91 98765 43210</li>
-                <li><strong>Address:</strong> CCC Campus, Block A, Sector 62, Noida, UP 201309</li>
+                <li><strong>Email:</strong> privacy@campuscareerconnect.com</li>
+                <li><strong>Phone:</strong> +91 80743 13417</li>
+                <li><strong>Address:</strong> CCC Campus, Malakpet, Hyderabad</li>
               </ul>
             </div>
           </section>

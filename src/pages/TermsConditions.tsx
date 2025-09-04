@@ -9,13 +9,13 @@ const TermsConditions = () => {
       <header className="bg-primary text-primary-foreground p-6">
         <div className="container mx-auto">
           <Link to="/">
-            <Button variant="ghost" className="text-primary-foreground mb-4">
+            <Button variant="ghost" className="text-primary-foreground mb-4 hover:underline hover:text-primary-foreground/90">
               <ArrowLeft className="h-4 w-4 mr-2" />
               Back to Home
             </Button>
           </Link>
           <h1 className="text-3xl font-bold">Terms & Conditions</h1>
-          <p className="text-primary-foreground/80">Your agreement with Campus Career Club</p>
+          <p className="text-primary-foreground/80">Your agreement with Campus Career Connect</p>
         </div>
       </header>
 
@@ -27,7 +27,7 @@ const TermsConditions = () => {
             <h2 className="text-2xl font-semibold mb-4">Quick Summary</h2>
             <div className="bg-muted/50 p-6 rounded-lg mb-6">
               <p>
-                <strong>What this means:</strong> By using Campus Career Club (CCC), you agree to these terms. 
+                <strong>What this means:</strong> By using Campus Career Connect (CCC), you agree to these terms. 
                 We'll help you find colleges and provide training, but we can't guarantee admission results. 
                 You're responsible for providing accurate information and following our guidelines.
               </p>
@@ -190,9 +190,9 @@ const TermsConditions = () => {
             <div className="bg-muted/50 p-6 rounded-lg">
               <p className="mb-2">For questions about these terms:</p>
               <ul className="space-y-1">
-                <li><strong>Email:</strong> legal@campuscareerclub.com</li>
-                <li><strong>Phone:</strong> +91 98765 43210</li>
-                <li><strong>Address:</strong> CCC Campus, Block A, Sector 62, Noida, UP 201309</li>
+                <li><strong>Email:</strong> legal@campuscareerconnect.com</li>
+                <li><strong>Phone:</strong> +91 8074313417</li>
+                <li><strong>Address:</strong> CCC Campus, Malakpet,Hyderabad</li>
                 <li><strong>Business Hours:</strong> Monday-Saturday, 9 AM - 6 PM</li>
               </ul>
             </div>

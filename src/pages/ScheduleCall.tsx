@@ -264,7 +264,7 @@ const ScheduleCall = () => {
                               <Link to="/privacy" className="text-accent hover:underline">
                                 Privacy Policy
                               </Link>{" "}
-                              of Campus Career Club
+                              of Campus Career Connect
                             </div>
                           </div>
                           <FormMessage />

@@ -40,7 +40,7 @@ const TestimonialsSection = () => {
             Success Stories from Our Students
           </h2>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
-            Hear from students who transformed their dreams into reality with Campus Career Club
+            Hear from students who transformed their dreams into reality with Campus Career Connect
           </p>
         </div>
 
