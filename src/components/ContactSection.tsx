@@ -265,7 +265,7 @@ const ContactSection = () => {
             Your journey to success starts with a single step.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="hero" size="lg" className="bg-white/10 border-grey/30 text-white hover:bg-white/20">
+            <Button variant="hero" size="lg" className="bg-white/10 border-grey/30 text-white hover:bg-white/20" onClick={() => navigate("/schedule-call")}>
               Start Free Consultation
             </Button>
             <Button variant="hero" size="lg" className="bg-white/10 border-grey/30 text-white hover:bg-white/20">
