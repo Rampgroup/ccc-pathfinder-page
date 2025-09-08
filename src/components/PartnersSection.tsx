@@ -85,7 +85,7 @@ const PartnersSection = () => {
 
         {/* Partner Logos/Names */}
   <div className="bg-gradient-subtle rounded-2xl p-8 mb-4 overflow-x-hidden">
-          <h3 className="text-2xl font-bold text-primary text-center mb-6">Top B.Tech College Partners</h3>
+          <h3 className="text-2xl font-bold text-primary text-center mb-6">Top  College Partners</h3>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-full overflow-x-hidden">
             {displayedColleges.map((college, index) => (
@@ -124,7 +124,7 @@ const PartnersSection = () => {
               style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.12)' }}
               onClick={() => {
                 if (showAllColleges) {
-                  // Scroll to the Top B.Tech College Partners heading
+                  // Scroll to the Top  College Partners heading
                   const heading = document.querySelector('h3.text-2xl.font-bold.text-primary.text-center.mb-6');
                   if (heading) {
                     heading.scrollIntoView({ behavior: 'smooth', block: 'start' });

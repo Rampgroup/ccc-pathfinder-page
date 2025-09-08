@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Target, Heart, Lightbulb, Users } from "lucide-react";
+import { Target, UserCheck, Lightbulb, Users } from "lucide-react";
 
 const AboutSection = () => {
   const values = [
@@ -9,7 +9,7 @@ const AboutSection = () => {
       description: "Get a step-by-step plan from college selection to career success. No confusion, just clarity."
     },
     {
-      icon: Heart,
+      icon: UserCheck,
       title: "Personal Mentoring",
       description: "We genuinely care about your future. Every student gets personal attention and guidance."
     },
@@ -58,7 +58,7 @@ const AboutSection = () => {
                 <div className="flex-shrink-0 w-8 h-8 border-2 border-primary rounded-full flex items-center justify-center text-primary font-bold">1</div>
                 <div>
                   <h4 className="font-bold text-primary mb-2">Find Your Perfect College</h4>
-                  <p className="text-muted-foreground">Choose from 500+ top B.Tech institutions across India with expert guidance.</p>
+                  <p className="text-muted-foreground">Choose from 500+ top  institutions across India with expert guidance.</p>
                 </div>
               </div>
               

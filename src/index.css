@@ -98,7 +98,10 @@
   * {
     @apply border-border;
   }
-  
+    html {
+    @apply overflow-x-hidden;
+  }
+
   body {
     @apply bg-background text-foreground font-inter antialiased  overflow-x-hidden;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";

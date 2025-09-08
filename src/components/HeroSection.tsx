@@ -1,4 +1,4 @@
-import { ArrowRight, Play, Star, Users, Award, TrendingUp, GraduationCap, Briefcase, Headphones } from "lucide-react";
+import { ArrowRight, Play, Star, Users, Award, TrendingUp, Building2, Briefcase, Headphones } from "lucide-react";
 import { Button } from "@/components/ui/button";
 const heroStudents = "/hero-students.jpg";
 
@@ -43,9 +43,9 @@ Learn, Train, and Get Placed with CCC.
             {/* Top Colleges */}
             <div className="flex items-center gap-3 text-foreground hover:scale-105 transition-transform">
               <div className="w-14 h-14 rounded-full flex items-center justify-center bg-primary">
-                <GraduationCap className="text-white w-6 " style={{ height: '25.5px' }} />
+                <Building2 className="text-white w-6 h-6"  />
               </div>
-              <div className="flex flex-col">
+              <div className="flex flex-col leading-tight">
                 <span className="text-xl font-bold text-primary" style={{ fontSize: '20px' }}>500+</span>
                 <span className="font-medium text-sm">Top Colleges</span>
               </div>
@@ -67,7 +67,7 @@ Learn, Train, and Get Placed with CCC.
               <div className="w-14 h-14 rounded-full flex items-center justify-center bg-primary">
                 <Headphones className="text-white w-6 h-6" />
               </div>
-              <div className="flex flex-col">
+              <div className="flex flex-col leading-tight">
                 <span className="text-xl font-bold text-primary" style={{ fontSize: '20px' }}>24/7</span>
                 <span className="font-medium text-sm">Expert Support</span>
               </div>
@@ -81,7 +81,7 @@ Learn, Train, and Get Placed with CCC.
               size="xl" 
               className="text-xl font-bold border-2 border-primary text-primary hover:text-primary-dark backdrop-blur-md shadow-card hover:shadow-elegant"
               onClick={() => {
-                const el = document.getElementById('partners');
+                const el = document.getElementById('contact');
                 if (el) {
                   el.scrollIntoView({ behavior: 'smooth' });
                 }

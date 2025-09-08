@@ -13,7 +13,7 @@ const HowItWorksSection = () => {
     {
       icon: Search,
       title: "Choose Your College",
-      description: "Browse our curated list of premium private B.Tech colleges and find the perfect match for your profile.",
+      description: "Browse our curated list of premium private  colleges and find the perfect match for your profile.",
       color: "from-blue-500 to-blue-600"
     },
     {
