@@ -10,7 +10,7 @@ const HeroSection = () => {
         <img
           src={heroStudents}
           alt="Students achieving success in their academic journey"
-          className="w-full h-full object-cover opacity-25 max-h-[60vh] sm:max-h-[70vh] md:max-h-none md:h-full md:w-full"
+          className="w-full h-full object-cover opacity-25"
           style={{ objectPosition: 'center bottom' }}
         />
       </div>
