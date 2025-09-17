@@ -56,7 +56,7 @@ const PartnersSection = () => {
   const categories = [];
 
   return (
-    <section id="partners" className="py-20 bg-background">
+    <section id="partners" className="pt-12 pb-20 md:pt-14 lg:pt-16 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
@@ -84,10 +84,10 @@ const PartnersSection = () => {
         </div>
 
         {/* Partner Logos/Names */}
-  <div className="bg-gradient-subtle rounded-2xl p-8 mb-4 overflow-x-hidden">
-          <h3 className="text-2xl font-bold text-primary text-center mb-6">Top  College Partners</h3>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-full overflow-x-hidden">
+        <div className="bg-gradient-subtle rounded-2xl py-8 px-4 sm:px-6 lg:px-8 mb-4 overflow-x-hidden">
+          <h3 className="text-2xl font-bold text-primary text-center mb-4">Top  College Partners</h3>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 sm:gap-x-6 gap-y-4 sm:gap-y-5 lg:gap-y-6 max-w-full overflow-x-hidden">
             {displayedColleges.map((college, index) => (
               <Card key={index} className="bg-white border-0 shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 group">
                 <CardContent className="p-6 text-center">
@@ -125,7 +125,7 @@ const PartnersSection = () => {
               onClick={() => {
                 if (showAllColleges) {
                   // Scroll to the Top  College Partners heading
-                  const heading = document.querySelector('h3.text-2xl.font-bold.text-primary.text-center.mb-6');
+                  const heading = document.querySelector('h3.text-2xl.font-bold.text-primary.text-center.mb-4');
                   if (heading) {
                     heading.scrollIntoView({ behavior: 'smooth', block: 'start' });
                   }
