@@ -62,7 +62,6 @@ const Footer = () => {
                 <MapPin className="w-4 h-4 text-white mt-1 flex-shrink-0" />
                 <span className="text-primary-foreground/80 text-sm">
                   CCC Campus, Malakpet, Hyderabad <br />
-
                 </span>
               </div>
               <div className="flex items-center space-x-2">
@@ -85,6 +84,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                <a href="https://www.facebook.com/share/17FAqgpYkR/" target="_blank" rel="noopener noreferrer" className="text-accent-foreground p-2 rounded transition-colors" aria-label="Facebook">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
                     <path d="M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.408.595 24 1.325 24h11.495v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.408 24 22.674V1.326C24 .592 23.406 0 22.675 0" />
                   </svg>
@@ -106,6 +106,8 @@ const Footer = () => {
                     strokeLinejoin="round"
                     className="w-5 h-5"
                   >
+                <a href="https://www.instagram.com/campuscareerconnect?utm_source=ig_web_button_share_sheet&igsh=MXQ3eGNtcGhveGZxOA==" target="_blank" rel="noopener noreferrer" className="text-accent-foreground p-2 rounded transition-colors" aria-label="Instagram">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
                     <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
                     <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
                     <line x1="17.5" y1="6.5" x2="17.5" y2="6.5" />
@@ -130,7 +132,7 @@ const Footer = () => {
         <div className="border-t border-primary-foreground/20 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-primary-foreground/80 text-sm">
-              © 2024 Campus Career Club. All rights reserved.
+              © 2024 Campus Career Connect All rights reserved.
             </div>
             <div className="flex space-x-6 text-sm">
               <a href="/privacy" className="text-primary-foreground/80 hover:text-accent transition-colors">Privacy Policy</a>

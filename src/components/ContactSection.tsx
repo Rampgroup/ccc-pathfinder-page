@@ -125,8 +125,8 @@ const ContactSection = () => {
                   <Mail className="w-5 h-5 text-blue mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold text-primary mb-1">Email</h4>
-                    <p className="text-muted-foreground text-sm">info@campuscareerclub.com</p>
-                    <p className="text-muted-foreground text-sm">support@campuscareerclub.com</p>
+                    <p className="text-muted-foreground text-sm">info@campuscareerconnect.com</p>
+                    <p className="text-muted-foreground text-sm">support@campuscareerconnect.com</p>
                   </div>
                 </div>
                 
@@ -232,7 +232,7 @@ const ContactSection = () => {
                   <div className="flex items-center space-x-2">
                     <input type="checkbox" id="consent" className="rounded" checked={form.consent} onChange={handleChange} />
                     <Label htmlFor="consent" className="text-sm text-muted-foreground">
-                      I agree to receive communications from Campus Career Club and understand that I can unsubscribe at any time.
+                      I agree to receive communications from Campus Career Connect and understand that I can unsubscribe at any time.
                     </Label>
                   </div>
 
@@ -261,7 +261,7 @@ const ContactSection = () => {
         <div className="mt-16 text-center bg-gradient-secondary rounded-2xl p-8 text-white">
           <h3 className="text-2xl font-bold mb-4">Ready to Transform Your Future?</h3>
           <p className="text-white/90 mb-6 max-w-2xl mx-auto">
-            Join thousands of successful students who found their perfect college and career path with Campus Career Club. 
+            Join thousands of successful students who found their perfect college and career path with Campus Career Connect. 
             Your journey to success starts with a single step.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

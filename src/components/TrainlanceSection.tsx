@@ -54,7 +54,7 @@ const TrainlanceSection = () => {
         {/* Partnership Overview */}
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
           <div>
-            <h3 className="text-2xl font-bold text-primary mb-6">
+            <h3 className="text-2xl font-bold text-primary mb-6 text-center">
               Why CCC Partners with Trainlance?
             </h3>
             <p className="text-lg text-muted-foreground mb-6">

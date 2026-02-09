@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Star, Quote } from "lucide-react";
 const testimonial1 = "/testimonial-1.jpg";
 const testimonial2 = "/testimonial-2.jpg";
-const testimonial3 = "/testimonial-3.jpg";
+const testimonial3 = "/testimonial-4.jpg";
 
 const TestimonialsSection = () => {
   const testimonials = [
@@ -33,14 +33,14 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section id="testimonials" className="py-20 bg-primary">
+    <section id="testimonials" className="pt-16 md:pt-20 pb-20 bg-primary">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Success Stories from Our Students
           </h2>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
-            Hear from students who transformed their dreams into reality with Campus Career Club
+            Hear from students who transformed their dreams into reality with Campus Career Connect
           </p>
         </div>
 

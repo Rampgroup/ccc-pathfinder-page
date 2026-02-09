@@ -38,7 +38,7 @@ const Header = () => {
   ];
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+    <header className={`sticky top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled 
         ? 'backdrop-blur-md shadow-card border-b border-border/30' 
         : ''
@@ -50,7 +50,7 @@ const Header = () => {
             <div className="p-1 bg-white/90 border-2 border-primary rounded-2xl shadow-card group-hover:shadow-elegant transition-all duration-300 group-hover:scale-105">
               <img 
                 src="/ccc-logo.jpeg"
-                alt="Campus Career Club Logo" 
+                alt="Campus Career Club connect" 
                 className="w-16 h-16 object-contain"
               />
             </div>
